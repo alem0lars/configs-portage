@@ -1,0 +1,19 @@
+elems:
+
+  - src: (g-sorcery.cfg)$
+    dst: /etc/g-sorcery/<1>
+    only:
+      features:
+        - g-sorcery
+
+  - src: eix/(eix-sync.conf)$
+    dst: /etc/<1>
+    only:
+      features:
+        - eix
+
+  - src: eix/rc/(.+)$
+    dst: /etc/eixrc/<1>
+    only:
+      features:
+        - eix
