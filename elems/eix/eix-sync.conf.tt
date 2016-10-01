@@ -39,4 +39,4 @@
 @emerge --regen || true
 
 
-# vim: set filetype=dosini.eruby :
+# vim: set filetype=eruby.dosini :

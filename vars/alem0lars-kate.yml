@@ -1,0 +1,12 @@
+repos:
+  crossdev:
+    dir: /usr/local/portage-crossdev
+  local:
+    dir: /usr/local/portage
+
+features:
+  - portage
+  - local-repo
+  - crossdev
+  - g-sorcery
+  - eix

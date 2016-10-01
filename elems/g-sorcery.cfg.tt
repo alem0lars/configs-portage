@@ -33,8 +33,7 @@
 
 
 [main]
+package_manager = portage
 
-package_manager=portage
 
-
-# vim: set filetype=dosini.eruby :
+# vim: set filetype=eruby.dosini :
