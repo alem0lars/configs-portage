@@ -30,12 +30,16 @@
 # limitations under the License.                                               │
 # ─────────────────────────────────────────────────────────────────────────────┤
 <% define_locals do
-  variable :"repos.crossdev.dir", type: :directory, as: :base_dir
+  variable :"portage.repos.crossdev.dir", type: :directory, as: :base_dir
 end -%>
 # ─────────────────────────────────────────────────────────────────────────────┘
+
 
 [crossdev]
 location = <%= local! :base_dir %>
 priority = 10
 masters = gentoo
 auto-sync = no
+
+
+# vim: set filetype=eruby.dosini :

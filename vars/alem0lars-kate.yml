@@ -1,12 +1,42 @@
-repos:
-  crossdev:
-    dir: /usr/local/portage-crossdev
-  local:
-    dir: /usr/local/portage
+portage:
+  cflags: ggdb
+  input_devices:
+    - synaptics
+    - evdev
+    - wacom
+  video_cards:
+    - i965
+    - nvidia
+    - intel
+  license: '*'
+  repos:
+    crossdev:
+      dir: /usr/local/portage-crossdev
+    local:
+      dir: /usr/local/portage
+
+cpu:
+  parallelism: 8
 
 features:
-  - portage
   - local-repo
   - crossdev
   - g-sorcery
-  - eix
+
+  - uefi
+  - alsa
+  - pulseaudio
+  - systemd
+  - avahi
+
+  - python
+  - ruby
+  - java
+  - haskell
+  - latex
+
+  - sqlite
+  
+  - zsh
+  - vim
+

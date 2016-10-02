@@ -1,8 +1,9 @@
 # ─────────────────────────────────────────────────────────────────────────────┐
 #                                                                              │
 # File informations:                                                           │
-# - Name:    elems/repos.conf/local.conf                               		   │
-# - Summary: Configuration of local repository.                      		   │
+# - Name:    elems/modules.tt                                        		   │
+# - Summary: This file can be used to override the metadata cache 			   │
+#            implementation.         					                       │
 # - Authors:                                                                   │
 #   - Alessandro Molari <molari.alessandro@gmail.com> (alem0lars)              │
 #                                                                              │
@@ -28,17 +29,12 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.             │
 # See the License for the specific language governing permissions and          │
 # limitations under the License.                                               │
-# ─────────────────────────────────────────────────────────────────────────────┤
-<% define_locals do
-  variable :"portage.repos.local.dir", type: :directory, as: :base_dir
-end -%>
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-[local]
-location = <%= local! :base_dir %>
-masters = gentoo
-auto-sync = no
+<% if has_feature? :sqlite %>
+portdbapi.auxdbmodule = cache.sqlite.database
+<% end %>
 
 
-# vim: set filetype=eruby.dosini :
+# vim: set filetype=eruby :

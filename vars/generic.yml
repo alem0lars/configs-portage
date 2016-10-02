@@ -1,0 +1,8 @@
+portage:
+  use_flags:
+    - cryptsetup
+    - elfutils
+
+features:
+  - portage
+  - eix

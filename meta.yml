@@ -4,6 +4,10 @@ elems:
     dst:  /etc/portage/<1>
     only: f?portage
 
+  - src:  (modules)$
+    dst:  /etc/portage/<1>
+    only: f?portage
+
   - src:  (repos\.conf/gentoo\.conf)$
     dst:  /etc/portage/<1>
     only: f?portage
