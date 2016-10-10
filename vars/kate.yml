@@ -1,3 +1,5 @@
+# => inherits: generic <= #
+
 portage:
   cflags: ggdb
   input_devices:
@@ -36,7 +38,6 @@ features:
   - latex
 
   - sqlite
-  
+
   - zsh
   - vim
-
