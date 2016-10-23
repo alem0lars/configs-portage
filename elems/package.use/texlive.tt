@@ -1,0 +1,8 @@
+*/* jadetex 
+*/* pstricks 
+
+app-text/texlive xetex extra context detex dvi2tty epspdf games graphics
+app-text/texlive humanities luatex metapost music omega pdfannotextractor
+app-text/texlive pstricks publishers science tex4ht texi2html xindy
+
+app-text/texlive-core xetex

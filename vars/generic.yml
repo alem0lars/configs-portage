@@ -1,7 +1,37 @@
 portage:
   use_flags:
+    # Restrictions
+    - '-bindist'
+    # Encryption
     - cryptsetup
+    # System
+    - dbus
+    # Optimization
+    - jit
+    - nptl
+    - smp
+    - threads
+    # File formats
+    # -> Graphics formats
+    - raw
+    - xpm
+    - jbig
+    - jpeg
+    - jpeg2k
+    - png
+    - svg
+    - gif
+    - tiff
+    - exif
+    - openexr
+    # -> Binary
     - elfutils
+    # Develop
+    - cscope
+    # i18n
+    - icu
+    # Misc
+    - kerberos
 
 features:
   - portage

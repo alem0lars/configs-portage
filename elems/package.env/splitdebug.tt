@@ -1,0 +1,2 @@
+# Add debug information to packages that could be used in development.
+dev-*/* splitdebug

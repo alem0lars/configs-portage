@@ -1,0 +1,4 @@
+media-gfx/graphviz no-distcc
+dev-db/mariadb     no-distcc
+sys-devel/llvm     no-distcc
+app-doc/doxygen    no-distcc

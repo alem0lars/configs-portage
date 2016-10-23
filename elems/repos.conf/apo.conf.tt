@@ -1,11 +1,8 @@
 # ─────────────────────────────────────────────────────────────────────────────┐
 #                                                                              │
 # File informations:                                                           │
-# - Name:    elems/package.keywords/tmp_unstable.conf.tt                       │
-# - Summary: Package keywords used to enable temporary packages marked as      │
-#            unstable. Packages listed here have been enabled because          │
-#            currently **there isn't an available stable version of those      │
-#            packages                                                          │
+# - Name:    elems/repos.conf/apo.conf                                         │
+# - Summary: Configuration of repository: `alem0lars personal overlay`.        │
 # - Authors:                                                                   │
 #   - Alessandro Molari <molari.alessandro@gmail.com> (alem0lars)              │
 #                                                                              │
@@ -31,13 +28,18 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.             │
 # See the License for the specific language governing permissions and          │
 # limitations under the License.                                               │
-#                                                                              │
+# ─────────────────────────────────────────────────────────────────────────────┤
+<% define_locals do
+  variable :"portage.repos.apo.dir", type: :directory, as: :base_dir
+end -%>
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-sys-kernel/dracut          ~amd64
-dev-ruby/thor              ~amd64
-sys-firmware/iwl7260-ucode ~amd64
+[apo]
+location  = <%= local! :base_dir %>
+sync-type = git
+sync-uri  = git://github.com/alem0lars/apo.git
+auto-sync = yes
 
 
-# vim: set filetype=eruby.gentoo-package-keywords :
+# vim: set filetype=eruby.dosini :

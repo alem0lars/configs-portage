@@ -1,0 +1,17 @@
+*/* svc
+*/* gles2
+net-libs/webkit-gtk -gles2
+
+sys-devel/distcc crossdev
+
+app-editors/vim vim-pager
+*/* widevine
+
+<% if has_feature? :clang %>
+*/* clang
+<% end %>
+*/* dot
+app-doc/doxygen doxysearch
+
+
+# vim: set filetype=eruby.gentoo-package-use :

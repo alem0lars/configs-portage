@@ -1,33 +1,53 @@
 elems:
 
-  - src:  (make\.conf)$
+  - src:  ^(make\.conf)$
     dst:  /etc/portage/<1>
     only: f?portage
 
-  - src:  (modules)$
+  - src:  ^(modules)$
     dst:  /etc/portage/<1>
     only: f?portage
 
-  - src:  (repos\.conf/gentoo\.conf)$
+  - src:  ^(env/.+)$
     dst:  /etc/portage/<1>
     only: f?portage
 
-  - src:  (repos\.conf/local\.conf)$
+  - src:  ^(package\.(?:env|use|keywords|mask|unmask)/.+)$
+    dst:  /etc/portage/<1>
+    only: f?portage
+
+  - src:  ^(repos\.conf/gentoo\.conf)$
+    dst:  /etc/portage/<1>
+    only: f?portage
+
+  - src:  ^(repos\.conf/local\.conf)$
     dst:  /etc/portage/<1>
     only: f?portage && f?local-repo
 
-  - src:  (repos\.conf/crossdev\.conf)$
+  - src:  ^(repos\.conf/crossdev\.conf)$
     dst:  /etc/portage/<1>
     only: f?portage && f?crossdev
 
-  - src:  (g-sorcery\.cfg)$
+  - src:  ^(repos\.conf/apo\.conf)$
+    dst:  /etc/portage/<1>
+    only: f?portage && f?apo-repo
+
+  - src:  ^(g-sorcery\.cfg)$
     dst:  /etc/g-sorcery/<1>
     only: f?portage && f?g-sorcery
 
-  - src:  eix/(eix-sync\.conf)$
+  - src:  ^eix/(eix-sync\.conf)$
     dst:  /etc/<1>
     only: f?portage && f?eix
 
-  - src:  eix/rc/(.+)$
+  - src:  ^eix/rc/(.+)$
     dst:  /etc/eixrc/<1>
     only: f?portage && f?eix
+
+  - src:  ^distccd\.conf$
+    dst:  /etc/systemd/system/distccd.service.d/00gentoo.conf
+    only: f?portage && f?distcc && f?systemd
+
+  - src:  ^(distcc)_(hosts)$
+    dst:  /etc/<1>/<2>
+    only: f?distcc

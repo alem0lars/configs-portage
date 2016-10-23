@@ -1,0 +1,6 @@
+www-client/firefox ~amd64
+www-client/uzbl **
+
+
+# Needed by `www-client/firefox`
+dev-libs/nss ~amd64

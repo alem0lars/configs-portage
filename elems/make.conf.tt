@@ -1,7 +1,7 @@
 # ─────────────────────────────────────────────────────────────────────────────┐
 #                                                                              │
 # File informations:                                                           │
-# - Name:    elems/make.conf.tt                                        		   │
+# - Name:    elems/make.conf.tt                                                │
 # - Summary: Customize the Portage environment.                                │
 # - Authors:                                                                   │
 #   - Alessandro Molari <molari.alessandro@gmail.com> (alem0lars)              │
@@ -32,13 +32,20 @@
 <% define_locals do
   variable :"cpu.parallelism",       type: :int,     as: :cpu_parallelism
 
-  variable :"portage.make.cflags",   type: :string?, as: :cflags
-  variable :"portage.input_devices", type: :string,  as: :input_devices
-  variable :"portage.video_cards",   type: :string,  as: :video_cards
-  variable :"portage.use_flags",     type: :string,  as: :use_flags
-  variable :"portage.license",       type: :string,  as: :license
+  variable :"portage.make.cflags", as: :cflags
+  variable :"portage.make.cxxflags", as: :cxxflags
+  variable :"portage.input_devices", as: :input_devices
+  variable :"portage.video_cards", as: :video_cards
+  variable :"portage.use_flags", as: :use_flags
+  variable :"portage.license", as: :license
 
-  computed(:max_jobs_count) { local!(:cpu_parallelism) * 2 + 1 }
+  computed(:max_jobs_count)  { local!(:cpu_parallelism) * 2 + 1 }
+  computed(:native_cflags) {
+    `gcc -### -E - -march=native -x c 2>&1|sed -r '/cc1/!d;s/(")|(^.* - )//g'`.strip
+  }
+  computed(:native_cxxflags) {
+    `gcc -### -E - -march=native -x cpp 2>&1|sed -r '/cc1/!d;s/(")|(^.* - )//g'`.strip
+  }
 end -%>
 # ─────────────────────────────────────────────────────────────────────────────┘
 
@@ -54,11 +61,15 @@ ABI_X86="64"
 INPUT_DEVICES="<%= local!(:input_devices).join(" ") %>"
 VIDEO_CARDS="<%=   local!(:video_cards).join(" ")   %>"
 # ───────────────────────────────────────────────────────────────── Compilers ─┤
-CFLAGS="-O2 -pipe -march=native"
+CFLAGS="-O2 -pipe <%= local! :native_cflags %>"
 <% if local? :cflags %>
-CFLAGS="${CFLAGS} <%= local!(:cflags).join(" ") %>"
+CFLAGS="${CFLAGS} <%= Array(local!(:cflags)).join(" ") %>"
 <% end %>
-CXXFLAGS="${CFLAGS}"
+
+CXXFLAGS="-O2 -pipe <%= local! :native_cxxflags %>"
+<% if local? :cxxflags %>
+CXXFLAGS="${CXXFLAGS} <%= Array(local!(:cxxflags)).join(" ") %>"
+<% end %>
 
 MAKEOPTS="-j<%= local! :max_jobs_count %> -l<%= local! :max_jobs_count %>"
 # ──────────────────────────────────────────────── Misc directories ← Portage ─┤
@@ -75,8 +86,11 @@ ACCEPT_LICENSE="<%= local! :license %>"
 <% end %>
 # ──────────────────────────────────────────────────────────────────── Emerge ─┤
 FEATURES="parallel-fetch metadata-transfer ${FEATURES}"
-FEATURES="splitdebug installsources ${FEATURES}"
+FEATURES="installsources ${FEATURES}"
 FEATURES="-userfetch -userpriv ${FEATURES}"
+<% if has_feature? :distcc %>
+FEATURES="distcc distcc-pump ${FEATURES}"
+<% end %>
 
 PORTAGE_NICENESS=16
 
@@ -90,18 +104,21 @@ PORTAGE_FETCH_RESUME_MIN_SIZE="192K"
 
 PORTAGE_ELOG_CLASSES="warn error info log qa"
 PORTAGE_ELOG_SYSTEM="save"
+
+FETCHCOMMAND="wget -t 3 -T 60 --passive-ftp --limit-rate=192k -O \"\${DISTDIR}/\${FILE}\" \"\${URI}\""
+RESUMECOMMAND="wget -c -t 3 -T 60 --passive-ftp --limit-rate=192k -O \"\${DISTDIR}/\${FILE}\" \"\${URI}\""
 # ──────────────────────────────────────────────────────────────────── Python ─┤
 <% if has_feature? :python %>
-PYTHON_TARGETS="python3_4 python2_7"
+PYTHON_TARGETS="python2_7 python3_4"
 USE_PYTHON="2.7" # 3.4 isn't available yet.
-PYTHON_SINGLE_TARGET="python3_4"
+PYTHON_SINGLE_TARGET="python2_7"
 <% end %>
 # ────────────────────────────────────────────────────────────────────── Ruby ─┤
 <% if has_feature? :ruby %>
 RUBY_TARGETS="ruby19 ruby20 ruby21"
 <% end %>
 # ──────────────────────────────────────────────────────── Custom ← Use Flags ─┤
-<% if local? portage.use_flags %>
+<% if local? :use_flags %>
 USE="${USE} <%= local!(:use_flags).join(" ") %>"
 <% end %>
 # ──────────────────────────────────────────────────────── System ← Use Flags ─┤
@@ -117,19 +134,38 @@ USE="${USE} pulseaudio"
 <% if has_feature? :avahi %>
 USE="${USE} mdnsresponder-compat howl-compat zeroconf"
 <% end %>
-# TODO : do we need this?
-# <% if has_feature? :systemd %>
-# USE="${USE} -consolekit systemd"
-# <% end %>
+<% if has_feature? :cups %>
+USE="${USE} cups"
+<% end %>
+# ─────────────────────────────────────────────────────── Typeset ← Use Flags ─┤
+USE="${USE} fontconfig"
+USE="${USE} truetype"
+# ─────────────────────────────────────────────────────────── Net ← Use Flags ─┤
+<% if has_feature? :bluetooth %>
+USE="${USE} bluetooth"
+<% end %>
 # ────────────────────────────────────────────────────────── Xorg ← Use Flags ─┤
 <% if has_feature? :xorg %>
-USE="${USE} X"
+USE="${USE} X xcb xft"
+USE="${USE} opengl"
 <% end %>
 # ────────────────────────────────────────────────────────── DBMS ← Use Flags ─┤
 <% if has_feature? :sqlite %>
 USE="${USE} sqlite"
 <% end %>
+<% if has_feature? :mysql %>
+USE="${USE} mysql"
+<% end %>
+<% if has_feature? :postgresql %>
+USE="${USE} postgres"
+<% end %>
 # ───────────────────────────────────────────────────────── Langs ← Use Flags ─┤
+<% if has_feature? :perl %>
+USE="${USE} perl"
+<% end %>
+<% if has_feature? :lua %>
+USE="${USE} lua"
+<% end %>
 <% if has_feature? :python %>
 USE="${USE} python"
 <% end %>
@@ -145,6 +181,9 @@ USE="${USE} hoogle hscolour"
 <% if has_feature? :latex %>
 USE="${USE} latex"
 <% end %>
+<% if has_feature? :xml %>
+USE="${USE} xml"
+<% end %>
 # ─────────────────────────────────────────────────────── Programs ← Use Flags ─┤
 <% if has_feature? :zsh %>
 USE="${USE} zsh-completion"
@@ -156,6 +195,11 @@ USE="${USE} vim-syntax"
 # <% if has_feature? :mutt %>
 # USE="${USE} mbox imap nntp"
 # <% end %>
+# ──────────────────────────────────────────────────────────────── Libreoffice ─┤
+LIBREOFFICE_EXTENSIONS="${LIBREOFFICE_EXTENSIONS} nlpsolver"
+LIBREOFFICE_EXTENSIONS="${LIBREOFFICE_EXTENSIONS} scripting-beanshell"
+LIBREOFFICE_EXTENSIONS="${LIBREOFFICE_EXTENSIONS} scripting-javascript"
+LIBREOFFICE_EXTENSIONS="${LIBREOFFICE_EXTENSIONS} wiki-publisher"
 # ──────────────────────────────────────────────────────────────────────────────┘
 
 

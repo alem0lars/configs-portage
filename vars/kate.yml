@@ -1,5 +1,7 @@
+# => inherits: generic <= #
+
+
 portage:
-  cflags: ggdb
   input_devices:
     - synaptics
     - evdev
@@ -14,12 +16,24 @@ portage:
       dir: /usr/local/portage-crossdev
     local:
       dir: /usr/local/portage
+    apo:
+      dir: /var/lib/layman/apo
 
 cpu:
   parallelism: 8
 
+distcc:
+  servers:
+    - host: 127.0.0.1
+      opts:
+        - lzo
+        - cpp
+  allowed:
+    - 127.0.0.1
+
 features:
   - local-repo
+  - apo-repo
   - crossdev
   - g-sorcery
 
@@ -28,15 +42,27 @@ features:
   - pulseaudio
   - systemd
   - avahi
+  - cups
 
   - python
   - ruby
   - java
   - haskell
   - latex
+  - xml
+  - lua
+  - perl
+  - clang
 
   - sqlite
-  
+  - mysql
+  - postgresql
+
+  - xorg
+
   - zsh
   - vim
 
+  - distcc
+
+  - bluetooth

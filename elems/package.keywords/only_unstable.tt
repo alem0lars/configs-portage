@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────────────────────┐
+#                                                                              │
+# File informations:                                                           │
+# - Name:    elems/package.keywords/only_unstable.conf.tt                       │
+# - Summary: Package keywords used to enable temporary packages marked as      │
+#            unstable. Packages listed here have been enabled because          │
+#            currently **there isn't an available stable version of those      │
+#            packages                                                          │
+# - Authors:                                                                   │
+#   - Alessandro Molari <molari.alessandro@gmail.com> (alem0lars)              │
+#                                                                              │
+# Project informations:                                                        │
+#   - Homepage:        https://github.com/alem0lars/configs-portage            │
+#   - Getting started: see README.md in the project root folder                │
+#                                                                              │
+# License: Apache v2.0 (see below)                                             │
+#                                                                              │
+# ─────────────────────────────────────────────────────────────────────────────┤
+#                                                                              │
+# Licensed to the Apache Software Foundation (ASF) under one more contributor  │
+# license agreements.  See the NOTICE file distributed with this work for      │
+# additional information regarding copyright ownership. The ASF licenses this  │
+# file to you under the Apache License, Version 2.0 (the "License"); you may   │
+# not use this file except in compliance with the License.                     │
+# You may obtain a copy of the License at                                      │
+#                                                                              │
+#   http://www.apache.org/licenses/LICENSE-2.0                                 │
+#                                                                              │
+# Unless required by applicable law or agreed to in writing, software          │
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT    │
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.             │
+# See the License for the specific language governing permissions and          │
+# limitations under the License.                                               │
+#                                                                              │
+# ─────────────────────────────────────────────────────────────────────────────┘
+
+
+sys-kernel/dracut             ~amd64
+dev-ruby/thor                 ~amd64
+sys-kernel/linux-firmware     ~amd64
+app-admin/eclean-kernel       ~amd64
+media-fonts/hack              ~amd64
+app-backup/attic              ~amd64
+www-plugins/google-talkplugin ~amd64
+net-misc/httpie               ~amd64
+app-emulation/vagrant         ~amd64
+dev-vcs/git-crypt             ~amd64
+dev-vcs/git-imerge            ~amd64
+dev-vcs/gitinspector          ~amd64
+x11-themes/arc-theme          ~amd64
+x11-themes/arc-icon-theme     ~amd64
+dev-lang/julia                ~amd64
+
+# Needed by `app-admin/eclean-kernel`
+dev-python/pymountboot ~amd64
+
+# Needed by `app-emulation/vagrant`
+dev-ruby/i18n                 ~amd64
+dev-ruby/pkg-config           ~amd64
+dev-ruby/bundler              ~amd64
+dev-ruby/rb-inotify           ~amd64
+dev-ruby/ruby_dep             ~amd64
+dev-ruby/hashicorp-checkpoint ~amd64
+dev-ruby/rest-client          ~amd64
+dev-ruby/net-ssh              ~amd64
+dev-ruby/listen               ~amd64
+dev-ruby/nokogiri             ~amd64
+
+# Needed by `dev-lang/julia`
+dev-libs/double-conversion ~amd64
+dev-libs/openspecfun       ~amd64
+sci-libs/openlibm          ~amd64
+virtual/blas               ~amd64
+
+
+# vim: set filetype=eruby.gentoo-package-keywords :
