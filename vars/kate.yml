@@ -1,6 +1,9 @@
 # => inherits: generic <= #
 
+<<<<<<< HEAD:vars/kate.yml
 
+=======
+>>>>>>> refs/remotes/origin/master:vars/kate.yml
 portage:
   input_devices:
     - synaptics
