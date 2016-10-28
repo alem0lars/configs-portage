@@ -1,8 +1,11 @@
 # ─────────────────────────────────────────────────────────────────────────────┐
 #                                                                              │
 # File informations:                                                           │
-# - Name:    elems/repos.conf/apo.conf                                         │
-# - Summary: Configuration of repository: `alem0lars personal overlay`.        │
+# - Name:    elems/package.use/not_working.conf.tt                             │
+# - Summary: Package USE needed for the package to compile.                    │
+#            Those USE flags aren't wanted, but they are needed at the moment. │
+#            They will be removed as soon as the package compiles without.     │
+#                                                                              │
 # - Authors:                                                                   │
 #   - Alessandro Molari <molari.alessandro@gmail.com> (alem0lars)              │
 #                                                                              │
@@ -28,18 +31,13 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.             │
 # See the License for the specific language governing permissions and          │
 # limitations under the License.                                               │
-# ─────────────────────────────────────────────────────────────────────────────┤
-<% define_locals do
-  computed(:base_dir, type: :directory) { "/var/lib/layman/apo" }
-end -%>
+#                                                                              │
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-[apo]
-location  = <%= local! :base_dir %>
-sync-type = git
-sync-uri  = git://github.com/alem0lars/apo.git
-auto-sync = yes
+# Doesn't support python 3 yet.
+app-office/unoconv python_single_target_python2_7
+app-text/asciidoc  python_single_target_python2_7
 
 
-# vim: set filetype=eruby.dosini :
+# vim: set filetype=eruby.gentoo-package-use :

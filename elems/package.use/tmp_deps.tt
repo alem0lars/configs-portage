@@ -1,8 +1,12 @@
 # ─────────────────────────────────────────────────────────────────────────────┐
 #                                                                              │
 # File informations:                                                           │
-# - Name:    elems/repos.conf/apo.conf                                         │
-# - Summary: Configuration of repository: `alem0lars personal overlay`.        │
+# - Name:    elems/package.use/tmp_deps.conf.tt                                │
+# - Summary: Package USE needed for dependencies.                              │
+#            Those USE flags aren't wanted, but they are needed at the moment. │
+#            They will be removed as soon as the dependant package compiles    │
+#            without the dependency with that USE flag.                        │
+#                                                                              │
 # - Authors:                                                                   │
 #   - Alessandro Molari <molari.alessandro@gmail.com> (alem0lars)              │
 #                                                                              │
@@ -28,18 +32,12 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.             │
 # See the License for the specific language governing permissions and          │
 # limitations under the License.                                               │
-# ─────────────────────────────────────────────────────────────────────────────┤
-<% define_locals do
-  computed(:base_dir, type: :directory) { "/var/lib/layman/apo" }
-end -%>
+#                                                                              │
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-[apo]
-location  = <%= local! :base_dir %>
-sync-type = git
-sync-uri  = git://github.com/alem0lars/apo.git
-auto-sync = yes
+# Needed by `net-wireless/gnuradio`
+dev-python/PyQt4 compat
 
 
-# vim: set filetype=eruby.dosini :
+# vim: set filetype=eruby.gentoo-package-use :

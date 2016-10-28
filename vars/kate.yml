@@ -1,9 +1,6 @@
 # => inherits: generic <= #
 
-<<<<<<< HEAD:vars/kate.yml
 
-=======
->>>>>>> refs/remotes/origin/master:vars/kate.yml
 portage:
   input_devices:
     - synaptics
@@ -19,8 +16,6 @@ portage:
       dir: /usr/local/portage-crossdev
     local:
       dir: /usr/local/portage
-    apo:
-      dir: /var/lib/layman/apo
 
 cpu:
   parallelism: 8
@@ -37,6 +32,7 @@ distcc:
 features:
   - local-repo
   - apo-repo
+  - pentoo-repo
   - crossdev
   - g-sorcery
 
@@ -66,6 +62,9 @@ features:
   - zsh
   - vim
 
+  - bluetooth
+
   - distcc
 
-  - bluetooth
+
+# vim: set filetype=eruby.yaml :

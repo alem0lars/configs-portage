@@ -29,7 +29,16 @@
 # See the License for the specific language governing permissions and          │
 # limitations under the License.                                               │
 # ─────────────────────────────────────────────────────────────────────────────┤
-<% define_locals do
+<%
+def flags_for(lang, banned_keywords)
+  flags = `gcc -### -E - -march=native -x #{lang} 2>&1|sed -r '/cc1/!d;s/(")|(^.* - )//g'`.strip
+  banned_keywords.each do |banned_keyword|
+    flags.gsub!(banned_keyword, "")
+  end
+  flags
+end
+
+define_locals do
   variable :"cpu.parallelism",       type: :int,     as: :cpu_parallelism
 
   variable :"portage.make.cflags", as: :cflags
@@ -40,12 +49,11 @@
   variable :"portage.license", as: :license
 
   computed(:max_jobs_count)  { local!(:cpu_parallelism) * 2 + 1 }
-  computed(:native_cflags) {
-    `gcc -### -E - -march=native -x c 2>&1|sed -r '/cc1/!d;s/(")|(^.* - )//g'`.strip
-  }
-  computed(:native_cxxflags) {
-    `gcc -### -E - -march=native -x cpp 2>&1|sed -r '/cc1/!d;s/(")|(^.* - )//g'`.strip
-  }
+
+  computed(:cflags_banned_keyword) { %w(-fstack-protector-strong) }
+
+  computed(:native_cflags)   { flags_for :c,   local!(:cflags_banned_keyword) }
+  computed(:native_cxxflags) { flags_for :cpp, local!(:cflags_banned_keyword) }
 end -%>
 # ─────────────────────────────────────────────────────────────────────────────┘
 
@@ -105,13 +113,14 @@ PORTAGE_FETCH_RESUME_MIN_SIZE="192K"
 PORTAGE_ELOG_CLASSES="warn error info log qa"
 PORTAGE_ELOG_SYSTEM="save"
 
+# TODO: dynamic check
 FETCHCOMMAND="wget -t 3 -T 60 --passive-ftp --limit-rate=192k -O \"\${DISTDIR}/\${FILE}\" \"\${URI}\""
 RESUMECOMMAND="wget -c -t 3 -T 60 --passive-ftp --limit-rate=192k -O \"\${DISTDIR}/\${FILE}\" \"\${URI}\""
 # ──────────────────────────────────────────────────────────────────── Python ─┤
 <% if has_feature? :python %>
 PYTHON_TARGETS="python2_7 python3_4"
-USE_PYTHON="2.7" # 3.4 isn't available yet.
-PYTHON_SINGLE_TARGET="python2_7"
+USE_PYTHON="2.7" # Version `3.4` isn't available yet.
+PYTHON_SINGLE_TARGET="python3_4"
 <% end %>
 # ────────────────────────────────────────────────────────────────────── Ruby ─┤
 <% if has_feature? :ruby %>
@@ -164,7 +173,7 @@ USE="${USE} postgres"
 USE="${USE} perl"
 <% end %>
 <% if has_feature? :lua %>
-USE="${USE} lua"
+USE="${USE} lua luajit"
 <% end %>
 <% if has_feature? :python %>
 USE="${USE} python"
@@ -185,6 +194,7 @@ USE="${USE} latex"
 USE="${USE} xml"
 <% end %>
 # ─────────────────────────────────────────────────────── Programs ← Use Flags ─┤
+USE="${USE} bash-completion"
 <% if has_feature? :zsh %>
 USE="${USE} zsh-completion"
 <% end %>

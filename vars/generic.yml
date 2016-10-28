@@ -6,6 +6,11 @@ portage:
     - cryptsetup
     # System
     - dbus
+    - policykit
+    # Network
+    - avahi
+    - upnp
+    - curl
     # Optimization
     - jit
     - nptl
@@ -24,15 +29,27 @@ portage:
     - tiff
     - exif
     - openexr
+    - graphviz
     # -> Binary
     - elfutils
-    # Develop
-    - cscope
+    # -> Compression
+    - lzma
+    # xorg
+    - xkb
     # i18n
     - icu
+    - idn
     # Misc
     - kerberos
+    # Libs support
+    - lapack
+    - plotutils
+    # Develop
+    - cscope
 
 features:
   - portage
   - eix
+
+
+# vim: set filetype=eruby.yaml :

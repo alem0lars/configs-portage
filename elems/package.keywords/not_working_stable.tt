@@ -36,8 +36,14 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-sci-libs/spqr    ~amd64
+sci-libs/spqr ~amd64
+sci-libs/mkl  ~amd64
 sys-apps/systemd ~amd64
+# Version >= `0.91-r3` is needed in order to compile.
+media-gfx/inkscape ~amd64
+
+# Needed by `sys-apps/systemd`
+sys-apps/util-linux ~amd64
 
 
 # vim: set filetype=eruby.gentoo-package-keywords :

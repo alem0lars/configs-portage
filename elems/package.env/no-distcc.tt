@@ -2,3 +2,7 @@ media-gfx/graphviz no-distcc
 dev-db/mariadb     no-distcc
 sys-devel/llvm     no-distcc
 app-doc/doxygen    no-distcc
+cross-*/*          no-distcc
+media-gfx/inkscape no-distcc
+sci-libs/mkl       no-distcc
+dev-cpp/gccxml     no-distcc

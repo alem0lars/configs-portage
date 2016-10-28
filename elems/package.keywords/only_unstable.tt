@@ -1,7 +1,7 @@
 # ─────────────────────────────────────────────────────────────────────────────┐
 #                                                                              │
 # File informations:                                                           │
-# - Name:    elems/package.keywords/only_unstable.conf.tt                       │
+# - Name:    elems/package.keywords/only_unstable.conf.tt                      │
 # - Summary: Package keywords used to enable temporary packages marked as      │
 #            unstable. Packages listed here have been enabled because          │
 #            currently **there isn't an available stable version of those      │
@@ -50,6 +50,57 @@ dev-vcs/gitinspector          ~amd64
 x11-themes/arc-theme          ~amd64
 x11-themes/arc-icon-theme     ~amd64
 dev-lang/julia                ~amd64
+app-misc/tmuxinator           ~amd64
+dev-db/sqlmap                 ~amd64
+net-wireless/gnuradio         ~amd64
+dev-util/protege              ~amd64
+app-misc/ttyrec               ~amd64
+dev-ruby/awesome_print        ~amd64
+dev-ruby/pry                  ~amd64
+app-crypt/hashcat             ~amd64
+net-analyzer/tsung            ~amd64
+media-gfx/pngquant            ~amd64
+media-plugins/gimp-gmic       ~amd64
+media-plugins/gimp-lensfun    ~amd64
+app-emacs/ghc-mod             ~amd64
+app-forensics/radamsa         ~amd64
+app-forensics/afl             ~amd64
+www-servers/pshs              ~amd64
+sci-electronics/quartus-prime-lite ~amd64
+dev-util/complexity           ~amd64
+dev-vcs/hub                   ~amd64
+media-gfx/plantuml            ~amd64
+app-editors/neovim            ~amd64
+
+# Needed by `app-editors/neovim`
+dev-ruby/neovim-ruby-client     ~amd64
+dev-libs/libtermkey             ~amd64
+dev-lua/lpeg                    ~amd64
+dev-libs/msgpack                ~amd64
+dev-lua/mpack                   ~amd64
+dev-libs/libvterm               ~amd64
+dev-python/neovim-python-client ~amd64
+dev-libs/unibilium              ~amd64
+dev-ruby/msgpack                ~amd64
+
+# Needed by `app-emacs/ghc-mod`
+dev-haskell/cabal-helper  ~amd64
+dev-haskell/monad-journal ~amd64
+dev-haskell/fclabels      ~amd64
+dev-haskell/ghc-syb-utils ~amd64
+dev-haskell/djinn-ghc     ~amd64
+dev-haskell/convertible   ~amd64
+dev-haskell/djinn-lib     ~amd64
+dev-haskell/either        ~amd64
+dev-haskell/pipes         ~amd64
+dev-haskell/monadrandom   ~amd64
+
+# Needed by `dev-ruby/pry`
+dev-ruby/slop          ~amd64
+dev-ruby/method_source ~amd64
+
+# Needed by `dev-db/sqlmap`
+dev-python/python-ntlm
 
 # Needed by `app-admin/eclean-kernel`
 dev-python/pymountboot ~amd64

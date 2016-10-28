@@ -1,8 +1,8 @@
 # ─────────────────────────────────────────────────────────────────────────────┐
 #                                                                              │
 # File informations:                                                           │
-# - Name:    elems/repos.conf/apo.conf                                         │
-# - Summary: Configuration of repository: `alem0lars personal overlay`.        │
+# - Name:    elems/repos.conf/pentoo.conf                                      │
+# - Summary: Configuration of repository: `pentoo`.                            │
 # - Authors:                                                                   │
 #   - Alessandro Molari <molari.alessandro@gmail.com> (alem0lars)              │
 #                                                                              │
@@ -28,17 +28,18 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.             │
 # See the License for the specific language governing permissions and          │
 # limitations under the License.                                               │
+#                                                                              │
 # ─────────────────────────────────────────────────────────────────────────────┤
 <% define_locals do
-  computed(:base_dir, type: :directory) { "/var/lib/layman/apo" }
+  computed(:base_dir, type: :directory) { "/var/lib/layman/pentoo" }
 end -%>
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-[apo]
+[pentoo]
 location  = <%= local! :base_dir %>
 sync-type = git
-sync-uri  = git://github.com/alem0lars/apo.git
+sync-uri  = git://github.com/pentoo/pentoo-overlay.git
 auto-sync = yes
 
 
