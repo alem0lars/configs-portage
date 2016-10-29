@@ -7,6 +7,7 @@ portage:
     # System
     - dbus
     - policykit
+    - libnotify
     # Network
     - avahi
     - upnp
@@ -17,7 +18,7 @@ portage:
     - smp
     - threads
     # File formats
-    # -> Graphics formats
+    # -> Graphics
     - raw
     - xpm
     - jbig
@@ -30,10 +31,14 @@ portage:
     - exif
     - openexr
     - graphviz
+    # -> Docs
+    - postscript
+    - djvu
     # -> Binary
     - elfutils
-    # -> Compression
+    # -> Archive
     - lzma
+    - rar
     # xorg
     - xkb
     # i18n

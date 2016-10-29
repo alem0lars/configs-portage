@@ -71,6 +71,7 @@ dev-util/complexity           ~amd64
 dev-vcs/hub                   ~amd64
 media-gfx/plantuml            ~amd64
 app-editors/neovim            ~amd64
+www-apps/etherpad-lite        ~amd64
 
 # Needed by `app-editors/neovim`
 dev-ruby/neovim-ruby-client     ~amd64

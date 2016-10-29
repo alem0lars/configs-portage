@@ -15,6 +15,7 @@ sys-process/htop oom
 sys-apps/dstat wifi
 net-analyzer/nmap ncat ndiff nping nmap-update
 sys-apps/systemd importd
+app-text/zathura-meta cb
 
 <% if has_feature? :clang %>
 */* clang
