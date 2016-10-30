@@ -1,6 +1,20 @@
 www-client/firefox ~amd64
 www-client/uzbl **
+#dev-lang/ruby ~amd64
 
+# Needed by `dev-lang/ruby`.
+#dev-ruby/rake            ~amd64
+#dev-ruby/power_assert    ~amd64
+#dev-ruby/did_you_mean    ~amd64
+#dev-ruby/net-telnet      ~amd64
+#dev-ruby/rdoc            ~amd64
+#dev-ruby/minitest        ~amd64
+#dev-ruby/racc            ~amd64
+#dev-ruby/json            ~amd64
+#dev-ruby/json            ~amd64
+#app-eselect/eselect-ruby ~amd64
+#dev-ruby/test-unit       ~amd64
+#dev-ruby/coderay         ~amd64
 
-# Needed by `www-client/firefox`
+# Needed by `www-client/firefox`.
 dev-libs/nss ~amd64

@@ -6,7 +6,6 @@
 */* smi
 */* cairo
 
-app-editors/vim vim-pager
 app-doc/doxygen doxysearch
 dev-db/sqlmap ntlm
 net-libs/webkit-gtk -gles2
@@ -16,6 +15,15 @@ sys-apps/dstat wifi
 net-analyzer/nmap ncat ndiff nping nmap-update
 sys-apps/systemd importd
 app-text/zathura-meta cb
+app-misc/fzf bash-keybindings zsh-keybindings
+
+<% if has_feature? :tmux %>
+app-misc/fzf tmux
+<% end %>
+<% if has_feature? :vim %>
+app-misc/fzf vim
+app-editors/vim vim-pager
+<% end %>
 
 <% if has_feature? :clang %>
 */* clang

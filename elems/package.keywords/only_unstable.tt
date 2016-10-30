@@ -72,6 +72,12 @@ dev-vcs/hub                   ~amd64
 media-gfx/plantuml            ~amd64
 app-editors/neovim            ~amd64
 www-apps/etherpad-lite        ~amd64
+app-misc/fzf                  ~amd64
+app-misc/tmsu                 ~amd64
+
+# Needed by `app-misc/tmsu`
+dev-go/go-sqlite3 ~amd64
+dev-libs/go-fuse  ~amd64
 
 # Needed by `app-editors/neovim`
 dev-ruby/neovim-ruby-client     ~amd64
