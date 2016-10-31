@@ -39,16 +39,20 @@ portage:
     # -> Archive
     - lzma
     - rar
-    # xorg
-    - xkb
+    # Emails
+    - pop
+    - imap
+    - smtp
     # i18n
     - icu
     - idn
     # Misc
     - kerberos
     # Libs support
-    - lapack
+    # - lapack not working atm
     - plotutils
+    # Xorg
+    - xkb
     # Develop
     - cscope
 

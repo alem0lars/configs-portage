@@ -124,7 +124,7 @@ PYTHON_SINGLE_TARGET="python3_4"
 <% end %>
 # ────────────────────────────────────────────────────────────────────── Ruby ─┤
 <% if has_feature? :ruby %>
-RUBY_TARGETS="ruby21"
+RUBY_TARGETS="ruby21 ruby23"
 <% end %>
 # ──────────────────────────────────────────────────────── Custom ← Use Flags ─┤
 <% if local? :use_flags %>

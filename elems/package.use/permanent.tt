@@ -1,10 +1,12 @@
-*/* svc
-*/* gles2
+*/* cairo
 */* dot
-*/* widevine
+*/* gles2
+*/* gpg
 */* kxb
 */* smi
-*/* cairo
+*/* svc
+*/* widevine
+*/* smime
 
 app-doc/doxygen doxysearch
 dev-db/sqlmap ntlm
@@ -16,6 +18,8 @@ net-analyzer/nmap ncat ndiff nping nmap-update
 sys-apps/systemd importd
 app-text/zathura-meta cb
 app-misc/fzf bash-keybindings zsh-keybindings
+app-emulation/virtualbox extensions
+mail-client/mutt sidebar notmuch
 
 <% if has_feature? :tmux %>
 app-misc/fzf tmux
