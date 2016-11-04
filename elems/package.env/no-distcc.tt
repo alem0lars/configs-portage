@@ -10,3 +10,5 @@ dev-python/numpy         no-distcc
 media-video/ffmpeg       no-distcc
 app-emulation/virtualbox no-distcc
 sys-libs/talloc          no-distcc
+dev-lang/rust            no-distcc
+dev-lang/racer           no-distcc

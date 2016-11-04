@@ -7,6 +7,7 @@
 */* svc
 */* widevine
 */* smime
+*/* egl
 
 app-doc/doxygen doxysearch
 dev-db/sqlmap ntlm

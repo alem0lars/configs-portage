@@ -36,6 +36,9 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
+# Needed by `dev-lang/rust`
+sys-devel/llvm multitarget
+
 # Needed by `net-wireless/gnuradio`
 dev-python/PyQt4 compat
 

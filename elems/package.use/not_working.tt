@@ -39,5 +39,8 @@
 app-office/unoconv python_single_target_python2_7
 app-text/asciidoc  python_single_target_python2_7
 
+# Disable threads because `threads? ( !cxx !mpi !fortran )`.
+sci-libs/hdf5 -threads
+
 
 # vim: set filetype=eruby.gentoo-package-use :

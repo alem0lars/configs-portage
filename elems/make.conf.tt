@@ -80,6 +80,12 @@ CXXFLAGS="${CXXFLAGS} <%= Array(local!(:cxxflags)).join(" ") %>"
 <% end %>
 
 MAKEOPTS="-j<%= local! :max_jobs_count %> -l<%= local! :max_jobs_count %>"
+
+# TODO: All targets are needed by multitarget in llvm ebuild, which is needed
+#       by rust.
+#       Remove the following line when rust ebuild doesn't need multitarget use
+#       flag anymore.
+LLVM_TARGETS="X86 AArch64 AMDGPU ARM BPF Hexagon MSP430 Mips NVPTX PowerPC Sparc SystemZ XCore"
 # ──────────────────────────────────────────────── Misc directories ← Portage ─┤
 PORTDIR="/usr/portage"
 DISTDIR="${PORTDIR}/distfiles"

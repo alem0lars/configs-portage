@@ -12,11 +12,16 @@ portage:
     - avahi
     - upnp
     - curl
+    - ssh
+    - socks5
     # Optimization
     - jit
     - nptl
     - smp
     - threads
+    # HW acceleration
+    - vaapi
+    - vdpau
     # File formats
     # -> Graphics
     - raw
@@ -39,6 +44,8 @@ portage:
     # -> Archive
     - lzma
     - rar
+    # -> Data
+    - hdf5
     # Emails
     - pop
     - imap
@@ -49,7 +56,7 @@ portage:
     # Misc
     - kerberos
     # Libs support
-    # - lapack not working atm
+    - lapack
     - plotutils
     # Xorg
     - xkb
