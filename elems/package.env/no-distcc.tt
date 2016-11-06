@@ -12,3 +12,5 @@ app-emulation/virtualbox no-distcc
 sys-libs/talloc          no-distcc
 dev-lang/rust            no-distcc
 dev-lang/racer           no-distcc
+dev-lang/julia           no-distcc
+app-misc/task            no-distcc

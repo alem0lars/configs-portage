@@ -21,6 +21,7 @@ app-text/zathura-meta cb
 app-misc/fzf bash-keybindings zsh-keybindings
 app-emulation/virtualbox extensions
 mail-client/mutt sidebar notmuch
+net-wireless/gnuradio grc
 
 <% if has_feature? :tmux %>
 app-misc/fzf tmux

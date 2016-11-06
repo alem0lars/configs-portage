@@ -106,7 +106,7 @@ FEATURES="-userfetch -userpriv ${FEATURES}"
 FEATURES="distcc distcc-pump ${FEATURES}"
 <% end %>
 
-PORTAGE_NICENESS=16
+PORTAGE_NICENESS=19
 
 EMERGE_DEFAULT_OPTS="--with-bdeps=y --keep-going=y --quiet-unmerge-warn"
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --quiet-build=y --verbose"

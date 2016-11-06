@@ -75,10 +75,14 @@ media-gfx/plantuml            ~amd64
 media-gfx/pngquant            ~amd64
 media-plugins/gimp-gmic       ~amd64
 media-plugins/gimp-lensfun    ~amd64
+media-sound/beets ~amd64
+media-sound/cmusfm ~amd64
 
 net-analyzer/tsung            ~amd64
 net-ftp/yafc                  ~amd64
 net-misc/httpie               ~amd64
+net-misc/drive                ~amd64
+net-misc/megatools            ~amd64
 net-wireless/gnuradio         ~amd64
 
 sci-electronics/quartus-prime-lite ~amd64
@@ -90,8 +94,13 @@ www-apps/etherpad-lite        ~amd64
 www-plugins/google-talkplugin ~amd64
 www-servers/pshs              ~amd64
 
+x11-apps/copyq                ~amd64
 x11-themes/arc-icon-theme     ~amd64
 x11-themes/arc-theme          ~amd64
+
+# Needed by `media-sound/beets`
+dev-python/jellyfish ~amd64
+dev-python/munkres ~amd64
 
 # Needed by `dev-python/sympy`.
 dev-python/mpmath ~amd64

@@ -1,0 +1,3 @@
+# Used to prevent an implementation from being pulled in by a virtual
+
+sci-libs/mkl

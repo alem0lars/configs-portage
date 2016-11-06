@@ -1,0 +1,3 @@
+# Used to allow an implementation to be picked as a implementation of a virtual
+
+sci-libs/blas-reference ~amd64
