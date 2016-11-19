@@ -35,72 +35,82 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-app-admin/eclean-kernel       ~amd64
-app-admin/lnav                ~amd64
-app-backup/attic              ~amd64
-app-crypt/hashcat             ~amd64
-app-editors/neovim            ~amd64
-app-emacs/ghc-mod             ~amd64
-app-emulation/vagrant         ~amd64
-app-forensics/afl             ~amd64
-app-forensics/radamsa         ~amd64
-app-forensics/scalpel         ~amd64
-app-i18n/translate-shell      ~amd64
-app-misc/buku                 ~amd64
-app-misc/fzf                  ~amd64
-app-misc/nitrokey-app         ~amd64
-app-misc/tmsu                 ~amd64
-app-misc/tmuxinator           ~amd64
-app-misc/ttyrec               ~amd64
-app-shells/fasd               ~amd64
+app-admin/eclean-kernel  ~amd64
+app-admin/lnav           ~amd64
+app-backup/attic         ~amd64
+app-crypt/hashcat        ~amd64
+app-editors/neovim       ~amd64
+app-emacs/ghc-mod        ~amd64
+app-emulation/vagrant    ~amd64
+app-forensics/afl        ~amd64
+app-forensics/radamsa    ~amd64
+app-forensics/scalpel    ~amd64
+app-i18n/translate-shell ~amd64
+app-misc/buku            ~amd64
+app-misc/fzf             ~amd64
+app-misc/nitrokey-app    ~amd64
+app-misc/tmsu            ~amd64
+app-misc/tmuxinator      ~amd64
+app-misc/sman            ~amd64
+app-misc/ttyrec          ~amd64
+app-shells/fasd          ~amd64
 
-dev-db/sqlmap                 ~amd64
-dev-lang/julia                ~amd64
-dev-python/sympy              ~amd64
-dev-ruby/awesome_print        ~amd64
-dev-ruby/pry                  ~amd64
-dev-ruby/thor                 ~amd64
+dev-db/sqlmap                       ~amd64
+dev-lang/julia                      ~amd64
+dev-python/sympy                    ~amd64
+dev-python/twisted                  ~amd64
+dev-ruby/awesome_print              ~amd64
+dev-ruby/pry                        ~amd64
+dev-ruby/thor                       ~amd64
 dev-util/android-sdk-update-manager ~amd64
-dev-util/complexity           ~amd64
-dev-util/dasht                ~amd64
-dev-util/protege              ~amd64
-dev-util/racer                **
-dev-vcs/git-crypt             ~amd64
-dev-vcs/git-imerge            ~amd64
-dev-vcs/gitinspector          ~amd64
-dev-vcs/hub                   ~amd64
+dev-util/complexity                 ~amd64
+dev-util/dasht                      ~amd64
+dev-util/protege                    ~amd64
+dev-util/racer                      **
+dev-vcs/git-crypt                   ~amd64
+dev-vcs/git-imerge                  ~amd64
+dev-vcs/gitinspector                ~amd64
+dev-vcs/hub                         ~amd64
 
-media-fonts/hack              ~amd64
-media-gfx/plantuml            ~amd64
-media-gfx/pngquant            ~amd64
-media-plugins/gimp-gmic       ~amd64
-media-plugins/gimp-lensfun    ~amd64
-media-sound/beets ~amd64
-media-sound/cmusfm ~amd64
+media-fonts/hack           ~amd64
+media-gfx/plantuml         ~amd64
+media-gfx/pngquant         ~amd64
+media-plugins/gimp-gmic    ~amd64
+media-plugins/gimp-lensfun ~amd64
+media-sound/beets          ~amd64
+media-sound/cmusfm         ~amd64
 
-net-analyzer/tsung            ~amd64
-net-ftp/yafc                  ~amd64
-net-misc/httpie               ~amd64
-net-misc/drive                ~amd64
-net-misc/megatools            ~amd64
-net-wireless/gnuradio         ~amd64
+net-analyzer/tsung    ~amd64
+net-analyzer/bro      ~amd64
+net-misc/httpie       ~amd64
+net-misc/drive        ~amd64
+net-misc/megatools    ~amd64
+net-wireless/gnuradio ~amd64
 
 sci-electronics/quartus-prime-lite ~amd64
 
-sys-kernel/dracut             ~amd64
-sys-kernel/linux-firmware     ~amd64
+sys-kernel/dracut         ~amd64
+sys-kernel/linux-firmware ~amd64
 
 www-apps/etherpad-lite        ~amd64
 www-plugins/google-talkplugin ~amd64
 www-servers/pshs              ~amd64
 
-x11-apps/copyq                ~amd64
-x11-themes/arc-icon-theme     ~amd64
-x11-themes/arc-theme          ~amd64
+x11-apps/copyq            ~amd64
+x11-themes/arc-icon-theme ~amd64
+x11-themes/arc-theme      ~amd64
+
+# Needed by `dev-python/twisted`
+dev-python/pyopenssl ~amd64
 
 # Needed by `media-sound/beets`
-dev-python/jellyfish ~amd64
-dev-python/munkres ~amd64
+dev-python/jellyfish  ~amd64
+dev-python/munkres    ~amd64
+dev-python/pyacoustid ~amd64
+dev-python/audioread  ~amd64
+
+# Needed by `net-analyzer/bro`.
+net-analyzer/ipsumdump ~amd64
 
 # Needed by `dev-python/sympy`.
 dev-python/mpmath ~amd64

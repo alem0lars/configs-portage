@@ -36,8 +36,17 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
+# Needed by `app-emulation/docker`
+sys-libs/libseccomp static-libs
+
+# Needed by `app-misc/nitrokey-app`
+dev-libs/libpcre* pcre16
+
 # Needed by `dev-lang/rust`
 sys-devel/llvm multitarget
+
+# Needed by `dev-util/android-sdk-update-manager`
+sys-libs/zlib abi_x86_32
 
 # Needed by `net-wireless/gnuradio`
 dev-python/PyQt4 compat

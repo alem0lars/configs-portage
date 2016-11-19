@@ -1,0 +1,2 @@
+# Force python 2 as the single target.
+PYTHON_SINGLE_TARGET="python2_7"

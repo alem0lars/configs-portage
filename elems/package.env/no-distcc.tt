@@ -14,3 +14,4 @@ dev-lang/rust            no-distcc
 dev-lang/racer           no-distcc
 dev-lang/julia           no-distcc
 app-misc/task            no-distcc
+net-analyzer/bro         no-distcc

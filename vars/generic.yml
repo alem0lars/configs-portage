@@ -36,6 +36,9 @@ portage:
     - exif
     - openexr
     - graphviz
+    # -> Audio
+    - flac
+    - ogg
     # -> Docs
     - postscript
     - djvu
@@ -55,6 +58,7 @@ portage:
     - idn
     # Misc
     - kerberos
+    - ssl
     # Libs support
     - lapack
     - plotutils

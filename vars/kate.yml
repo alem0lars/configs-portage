@@ -52,6 +52,7 @@ features:
   - lua
   - perl
   - clang
+  - tcl
 
   - sqlite
   - mysql

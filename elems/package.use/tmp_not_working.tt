@@ -36,8 +36,10 @@
 
 
 # Doesn't support python 3 yet.
-app-office/unoconv python_single_target_python2_7
-app-text/asciidoc  python_single_target_python2_7
+app-text/asciidoc python_single_target_python2_7
+
+# A lot of plugins don't support python 3 yet.
+net-irc/weechat python_single_target_python2_7
 
 # Disable threads because `threads? ( !cxx !mpi !fortran )`.
 sci-libs/hdf5 -threads

@@ -1,0 +1,5 @@
+# Doesn't support python 3 yet.
+app-text/asciidoc python2
+
+# A lot of plugins don't support python 3 yet.
+net-irc/weechat python2
