@@ -37,6 +37,7 @@
 
 app-admin/eclean-kernel  ~amd64
 app-admin/lnav           ~amd64
+app-admin/salt           ~amd64
 app-backup/attic         ~amd64
 app-crypt/hashcat        ~amd64
 app-editors/neovim       ~amd64

@@ -193,6 +193,9 @@ USE="${USE} java gcj"
 <% if has_feature? :haskell %>
 USE="${USE} hoogle hscolour"
 <% end %>
+<% if has_feature? :tcl %>
+USE="${USE} tcl"
+<% end %>
 <% if has_feature? :latex %>
 USE="${USE} latex"
 <% end %>
