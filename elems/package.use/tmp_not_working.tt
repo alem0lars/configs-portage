@@ -44,5 +44,9 @@ net-irc/weechat python_single_target_python2_7
 # Disable threads because `threads? ( !cxx !mpi !fortran )`.
 sci-libs/hdf5 -threads
 
+# Package `dev-python/python-magic` needs that `sys-apps/file` has USE flag
+# `python` turned off.
+sys-apps/file -python
+
 
 # vim: set filetype=eruby.gentoo-package-use :
