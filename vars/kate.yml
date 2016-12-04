@@ -20,15 +20,6 @@ portage:
 cpu:
   parallelism: 8
 
-distcc:
-  servers:
-    - host: 127.0.0.1
-      opts:
-        - lzo
-        - cpp
-  allowed:
-    - 127.0.0.1
-
 features:
   - local-repo
   - apo-repo
@@ -65,8 +56,6 @@ features:
   - tmux
 
   - bluetooth
-
-  - distcc
 
 
 # vim: set filetype=eruby.yaml :

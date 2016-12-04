@@ -30,7 +30,7 @@
 # limitations under the License.                                               │
 # ─────────────────────────────────────────────────────────────────────────────┤
 <%
-def flags_for(lang, banned_keywords)
+def native_flags_for(lang, banned_keywords)
   flags = `gcc -### -E - -march=native -x #{lang} 2>&1|sed -r '/cc1/!d;s/(")|(^.* - )//g'`.strip
   banned_keywords.each do |banned_keyword|
     flags.gsub!(banned_keyword, "")
@@ -41,8 +41,8 @@ end
 define_locals do
   variable :"cpu.parallelism",       type: :int,     as: :cpu_parallelism
 
-  variable :"portage.make.cflags", as: :cflags
-  variable :"portage.make.cxxflags", as: :cxxflags
+  variable :"portage.make.cflags", as: :custom_cflags
+  variable :"portage.make.cxxflags", as: :custom_cxxflags
   variable :"portage.input_devices", as: :input_devices
   variable :"portage.video_cards", as: :video_cards
   variable :"portage.use_flags", as: :use_flags
@@ -52,8 +52,21 @@ define_locals do
 
   computed(:cflags_banned_keyword) { %w(-fstack-protector-strong) }
 
-  computed(:native_cflags)   { flags_for :c,   local!(:cflags_banned_keyword) }
-  computed(:native_cxxflags) { flags_for :cpp, local!(:cflags_banned_keyword) }
+  computed(:cflags) do
+    if has_feature? :distcc
+      native_flags_for :c, local!(:cflags_banned_keyword)
+    else
+      "-march=native"
+    end
+  end
+
+  computed(:cxxflags) do
+    if has_feature? :distcc
+      native_flags_for :cpp, local!(:cflags_banned_keyword)
+    else
+      "-march=native"
+    end
+  end
 end -%>
 # ─────────────────────────────────────────────────────────────────────────────┘
 
@@ -69,14 +82,14 @@ ABI_X86="64"
 INPUT_DEVICES="<%= local!(:input_devices).join(" ") %>"
 VIDEO_CARDS="<%=   local!(:video_cards).join(" ")   %>"
 # ───────────────────────────────────────────────────────────────── Compilers ─┤
-CFLAGS="-O2 -pipe <%= local! :native_cflags %>"
-<% if local? :cflags %>
-CFLAGS="${CFLAGS} <%= Array(local!(:cflags)).join(" ") %>"
+CFLAGS="-O2 -pipe <%= local! :cflags %>"
+<% if local? :custom_cflags %>
+CFLAGS="${CFLAGS} <%= Array(local!(:custom_cflags)).join(" ") %>"
 <% end %>
 
-CXXFLAGS="-O2 -pipe <%= local! :native_cxxflags %>"
-<% if local? :cxxflags %>
-CXXFLAGS="${CXXFLAGS} <%= Array(local!(:cxxflags)).join(" ") %>"
+CXXFLAGS="-O2 -pipe <%= local! :cxxflags %>"
+<% if local? :custom_cxxflags %>
+CXXFLAGS="${CXXFLAGS} <%= Array(local!(:custom_cxxflags)).join(" ") %>"
 <% end %>
 
 MAKEOPTS="-j<%= local! :max_jobs_count %> -l<%= local! :max_jobs_count %>"
