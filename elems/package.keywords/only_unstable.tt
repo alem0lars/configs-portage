@@ -101,6 +101,9 @@ x11-apps/copyq            ~amd64
 x11-themes/arc-icon-theme ~amd64
 x11-themes/arc-theme      ~amd64
 
+# Needed by `media-plugins/gimp-lensfun`
+media-libs/lensfun ~amd64
+
 # Needed by `dev-python/twisted`
 dev-python/pyopenssl ~amd64
 

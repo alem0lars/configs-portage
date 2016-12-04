@@ -3,8 +3,21 @@ dev-lang/rust      ~amd64
 dev-util/cargo     ~amd64
 dev-util/radare2   **
 mail-client/mutt   ~amd64
-net-libs/nodejs    ~amd64
+<net-libs/nodejs-7.0.0    ~amd64
 www-client/firefox ~amd64
+www-client/firefox-bin ~amd64
+dev-db/mongodb ~amd64
+net-analyzer/suricata ~amd64
+dev-util/idea-ultimate ~amd64
+
+# Needed by `net-analyzer/suricata`
+net-libs/libhtp ~amd64
+
+# Needed by `dev-db/mongodb`
+app-admin/mongo-tools ~amd64
+dev-libs/libpcre ~amd64
+dev-libs/boost ~amd64
+dev-util/boost-build ~amd64
 
 # Needed by `net-libs/nodejs`.
 dev-libs/libuv ~amd64
