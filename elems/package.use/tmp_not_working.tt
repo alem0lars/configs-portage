@@ -48,5 +48,9 @@ sci-libs/hdf5 -threads
 # `python` turned off.
 sys-apps/file -python
 
+# `net-proxy/dante` has some compile errors in source code that is enabled with
+# the use flag `upnp`.
+net-proxy/dante -upnp
+
 
 # vim: set filetype=eruby.gentoo-package-use :

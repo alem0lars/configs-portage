@@ -40,5 +40,8 @@
 # Needed by `net-analyzer/nmap`
 sys-libs/libseccomp ~amd64
 
+# Needed by `media-gfx/gimp`
+sys-libs/binutils-libs ~amd64
+
 
 # vim: set filetype=eruby.gentoo-package-keywords :
