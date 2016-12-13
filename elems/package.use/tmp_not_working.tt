@@ -52,5 +52,10 @@ sys-apps/file -python
 # the use flag `upnp`.
 net-proxy/dante -upnp
 
+# `net-analyzer/suricata` doesn't support both `lua` and `luajit` use flags.
+<% if has_feature? :lua %>
+net-analyzer/suricata luajit -lua
+<% end %>
+
 
 # vim: set filetype=eruby.gentoo-package-use :

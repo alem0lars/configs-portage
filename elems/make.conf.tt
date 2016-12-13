@@ -192,7 +192,7 @@ USE="${USE} postgres"
 USE="${USE} perl"
 <% end %>
 <% if has_feature? :lua %>
-USE="${USE} lua"
+USE="${USE} lua luajit"
 <% end %>
 <% if has_feature? :python %>
 USE="${USE} python"
