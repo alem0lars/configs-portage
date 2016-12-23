@@ -1,12 +1,8 @@
 # ─────────────────────────────────────────────────────────────────────────────┐
 #                                                                              │
 # File informations:                                                           │
-# - Name:    elems/package.keywords/not_working_stable.tt.conf.tt              │
-# - Summary: Package keywords used to enable temporary packages marked as      │
-#            unstable. Packages listed here have been enabled because          │
-#            currently **the stable version isn't working**                    │
-#            (e.g. compile errors).                                            │
-#                                                                              │
+# - Name:    elems/repos.conf/r.conf                                           │
+# - Summary: Configuration of repository: `r`.                                 │
 # - Authors:                                                                   │
 #   - Alessandro Molari <molari.alessandro@gmail.com> (alem0lars)              │
 #                                                                              │
@@ -33,20 +29,18 @@
 # See the License for the specific language governing permissions and          │
 # limitations under the License.                                               │
 #                                                                              │
+# ─────────────────────────────────────────────────────────────────────────────┤
+<% define_locals do
+  computed(:base_dir, type: :directory) { "/var/lib/layman/R_Overlay" }
+end %>
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-sci-libs/spqr ~amd64
-sys-apps/systemd ~amd64
-# Version >= `0.91-r3` is needed in order to compile.
-media-gfx/inkscape ~amd64
-
-# Needed by `sys-apps/systemd`
-sys-apps/util-linux ~amd64
-
-# doesn't have -target
-x11-misc/xclip ~amd64
+[R_Overlay]
+location  = <%= local! :base_dir %>
+sync-type = rsync
+sync-uri  = rsync://roverlay.dev.gentoo.org/roverlay
+auto-sync = yes
 
 
-
-# vim: set filetype=eruby.gentoo-package-keywords :
+# vim: set filetype=eruby.dosini :

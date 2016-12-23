@@ -66,6 +66,8 @@ portage:
     - xkb
     # Develop
     - cscope
+    # Browse
+    - nsplugin
 
 features:
   - portage
