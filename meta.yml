@@ -36,6 +36,10 @@ elems:
     dst:  /etc/portage/<1>
     only: f?portage && f?pentoo-repo
 
+  - src:  ^(repos\.conf/r\.conf)$
+    dst:  /etc/portage/<1>
+    only: f?portage && f?r-repo
+
   - src:  ^(g-sorcery\.cfg)$
     dst:  /etc/g-sorcery/<1>
     only: f?portage && f?g-sorcery

@@ -57,6 +57,7 @@ app-misc/tmuxinator      ~amd64
 app-misc/sman            ~amd64
 app-misc/ttyrec          ~amd64
 app-shells/fasd          ~amd64
+app-emulation/docker-compose ~amd64
 
 dev-db/sqlmap                       ~amd64
 dev-lang/julia                      ~amd64
@@ -91,6 +92,7 @@ net-misc/httpie       ~amd64
 net-misc/drive        ~amd64
 net-misc/megatools    ~amd64
 net-wireless/gnuradio ~amd64
+net-print/epson-inkjet-printer-escpr ~amd64
 
 sci-electronics/quartus-prime-lite ~amd64
 
@@ -104,6 +106,48 @@ www-servers/pshs              ~amd64
 x11-apps/copyq            ~amd64
 x11-themes/arc-icon-theme ~amd64
 x11-themes/arc-theme      ~amd64
+
+sci-CRAN/readr   ~amd64
+sci-CRAN/ggplot2 ~amd64
+sci-CRAN/dplyr   ~amd64
+
+# Needed by `sci-CRAN/dplyr`
+sci-CRAN/R6         ~amd64
+sci-CRAN/DBI        ~amd64
+sci-CRAN/magrittr   ~amd64
+sci-CRAN/tibble     ~amd64
+sci-CRAN/assertthat ~amd64
+sci-CRAN/lazyeval   ~amd64
+sci-CRAN/Rcpp       ~amd64
+sci-CRAN/BH         ~amd64
+
+# Needed by `sci-CRAN/ggplot2`
+sci-CRAN/gtable       ~amd64
+sci-CRAN/readxl       ~amd64
+sci-CRAN/dichromat    ~amd64
+sci-CRAN/stringi      ~amd64
+sci-CRAN/labeling     ~amd64
+sci-CRAN/colorspace   ~amd64
+sci-CRAN/scales       ~amd64
+sci-CRAN/RColorBrewer ~amd64
+sci-CRAN/digest       ~amd64
+sci-CRAN/stringr      ~amd64
+sci-CRAN/munsell      ~amd64
+sci-CRAN/reshape2     ~amd64
+sci-CRAN/hms          ~amd64
+virtual/MASS          ~amd64
+sci-CRAN/plyr         ~amd64
+
+# Needed by `sci-CRAN/readr`
+sci-CRAN/curl ~amd64
+
+# Needed by `app-emulation/docker-compose`
+dev-python/ipaddress        ~amd64
+dev-python/docker-pycreds   ~amd64
+dev-python/dockerpty        ~amd64
+dev-python/cached-property  ~amd64
+dev-python/websocket-client ~amd64
+dev-python/docker-py        ~amd64
 
 # Needed by `media-plugins/gimp-lensfun`
 media-libs/lensfun ~amd64
