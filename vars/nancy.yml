@@ -49,8 +49,6 @@ features:
 
   - xorg
 
-  - tk
-
   - zsh
   - vim
   - tmux

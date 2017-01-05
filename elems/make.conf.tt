@@ -176,6 +176,7 @@ USE="${USE} bluetooth"
 <% if has_feature? :xorg %>
 USE="${USE} X xcb xft"
 USE="${USE} opengl"
+USE="${USE} tk"
 <% end %>
 # ────────────────────────────────────────────────────────── DBMS ← Use Flags ─┤
 <% if has_feature? :sqlite %>
