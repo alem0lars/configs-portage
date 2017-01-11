@@ -26,6 +26,7 @@ sys-devel/distcc crossdev
 sys-process/htop oom
 x11-base/xorg-server xvfb
 x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth unicode3
+net-misc/openconnect gssapi lz4 stoken
 
 <% if has_feature? :tmux %>
 app-misc/fzf tmux
