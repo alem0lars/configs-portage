@@ -2,6 +2,8 @@
 */* dot gles2 gpg kxb smi svc widevine smime egl jadetex pstricks
 */* pgo
 
+mail-client/mutt -berkdb -gdbm lmdb -qdbm -tokyocabinet
+
 app-emulation/wine staging
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
@@ -23,6 +25,7 @@ sys-apps/dstat wifi
 sys-apps/systemd importd
 sys-libs/zlib minizip
 sys-devel/distcc crossdev
+sys-devel/autogen libopts
 sys-process/htop oom
 x11-base/xorg-server xvfb
 x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth unicode3

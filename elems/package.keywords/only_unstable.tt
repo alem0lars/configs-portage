@@ -35,6 +35,10 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
+# gentoo-haskell overlay has only unstable packages by policy:
+# https://github.com/gentoo-haskell/gentoo-haskell#quickest-start
+*/*::haskell ~amd64
+
 app-admin/eclean-kernel      ~amd64
 app-admin/lnav               ~amd64
 app-admin/salt               ~amd64
@@ -114,6 +118,9 @@ sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
 
+# Needed by `net-misc/httpie`.
+dev-python/pygments ~amd64
+
 # Needed by `app-misc/geeknote`
 dev-util/apache-thrift         ~amd64
 dev-python/evernote-sdk-python ~amd64
@@ -155,6 +162,7 @@ dev-python/dockerpty        ~amd64
 dev-python/cached-property  ~amd64
 dev-python/websocket-client ~amd64
 dev-python/docker-py        ~amd64
+dev-python/colorama         ~amd64
 
 # Needed by `media-plugins/gimp-lensfun`
 media-libs/lensfun ~amd64
