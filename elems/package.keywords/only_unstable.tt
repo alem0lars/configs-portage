@@ -35,37 +35,40 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-app-admin/eclean-kernel  ~amd64
-app-admin/lnav           ~amd64
-app-admin/salt           ~amd64
-app-backup/attic         ~amd64
-app-crypt/hashcat        ~amd64
-app-editors/neovim       ~amd64
-app-emacs/ghc-mod        ~amd64
-app-emulation/vagrant    ~amd64
-app-emulation/wine       ~amd64
-app-emulation/winetricks ~amd64
-app-forensics/afl        ~amd64
-app-forensics/radamsa    ~amd64
-app-forensics/scalpel    ~amd64
-app-i18n/translate-shell ~amd64
-app-misc/buku            ~amd64
-app-misc/fzf             ~amd64
-app-misc/nitrokey-app    ~amd64
-app-misc/tmsu            ~amd64
-app-misc/tmuxinator      ~amd64
-app-misc/sman            ~amd64
-app-misc/ttyrec          ~amd64
-app-shells/fasd          ~amd64
+app-admin/eclean-kernel      ~amd64
+app-admin/lnav               ~amd64
+app-admin/salt               ~amd64
+app-backup/attic             ~amd64
+app-crypt/hashcat            ~amd64
+app-editors/neovim           ~amd64
+app-emacs/ghc-mod            ~amd64
+app-emulation/vagrant        ~amd64
+app-emulation/wine           ~amd64
+app-emulation/winetricks     ~amd64
+app-forensics/afl            ~amd64
+app-forensics/radamsa        ~amd64
+app-forensics/scalpel        ~amd64
+app-i18n/translate-shell     ~amd64
+app-misc/geeknote            ~amd64
+app-misc/buku                ~amd64
+app-misc/fzf                 ~amd64
+app-misc/nitrokey-app        ~amd64
+app-misc/tmsu                ~amd64
+app-misc/tmuxinator          ~amd64
+app-misc/sman                ~amd64
+app-misc/ttyrec              ~amd64
+app-shells/fasd              ~amd64
 app-emulation/docker-compose ~amd64
 
 dev-db/sqlmap                       ~amd64
 dev-lang/julia                      ~amd64
 dev-python/sympy                    ~amd64
 dev-python/twisted                  ~amd64
+dev-python/mwclient                 ~amd64
 dev-ruby/awesome_print              ~amd64
 dev-ruby/pry                        ~amd64
 dev-ruby/thor                       ~amd64
+dev-util/dex2jar                    ~amd64
 dev-util/android-sdk-update-manager ~amd64
 dev-util/complexity                 ~amd64
 dev-util/dasht                      ~amd64
@@ -110,6 +113,10 @@ x11-themes/arc-theme      ~amd64
 sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
+
+# Needed by `app-misc/geeknote`
+dev-util/apache-thrift         ~amd64
+dev-python/evernote-sdk-python ~amd64
 
 # Needed by `sci-CRAN/dplyr`
 sci-CRAN/R6         ~amd64

@@ -24,6 +24,7 @@ features:
   - local-repo
   - apo-repo
   - pentoo-repo
+  - haskell-repo
   - r-repo
   - crossdev
   - g-sorcery
