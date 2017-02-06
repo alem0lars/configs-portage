@@ -2,6 +2,7 @@
 */* dot gles2 gpg kxb smi svc widevine smime egl jadetex pstricks
 */* pgo
 
+net-misc/tigervnc server
 app-emulation/wine staging
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs

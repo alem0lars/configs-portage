@@ -1,4 +1,4 @@
-# => inherits: generic <= #
+# => inherits: generic, with-alem0lars-features <= #
 
 
 portage:
@@ -16,42 +16,6 @@ portage:
 
 cpu:
   parallelism: 8
-
-features:
-  - local-repo
-  - apo-repo
-  - pentoo-repo
-  - r-repo
-  - crossdev
-  - g-sorcery
-
-  - uefi
-  - alsa
-  - pulseaudio
-  - systemd
-  - avahi
-  - cups
-
-  - python
-  - ruby
-  - java
-  - haskell
-  - latex
-  - xml
-  - lua
-  - perl
-  - clang
-  - tcl
-
-  - sqlite
-  - mysql
-  - postgresql
-
-  - xorg
-
-  - zsh
-  - vim
-  - tmux
 
 
 # vim: set filetype=eruby.yaml :
