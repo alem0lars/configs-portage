@@ -57,5 +57,20 @@ net-proxy/dante -upnp
 net-analyzer/suricata luajit -lua
 <% end %>
 
+# Needed by vagrant
+dev-ruby/json         ruby_targets_ruby24
+dev-ruby/xmlrpc       ruby_targets_ruby24
+dev-ruby/minitest     ruby_targets_ruby24
+virtual/rubygems      ruby_targets_ruby24
+dev-ruby/rdoc         ruby_targets_ruby24
+dev-ruby/racc         ruby_targets_ruby24
+dev-ruby/test-unit    ruby_targets_ruby24
+dev-ruby/net-telnet   ruby_targets_ruby24
+dev-ruby/kpeg         ruby_targets_ruby24
+dev-ruby/rubygems     ruby_targets_ruby24
+dev-ruby/did_you_mean ruby_targets_ruby24
+dev-ruby/power_assert ruby_targets_ruby24
+dev-ruby/rake         ruby_targets_ruby24
+
 
 # vim: set filetype=eruby.gentoo-package-use :

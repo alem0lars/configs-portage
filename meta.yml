@@ -44,6 +44,10 @@ elems:
     dst:  /etc/portage/<1>
     only: f?portage && f?r-repo
 
+  - src:  ^(repos\.conf/haskell\.conf)$
+    dst:  /etc/portage/<1>
+    only: f?portage && f?haskell-repo
+
   - src:  ^(g-sorcery\.cfg)$
     dst:  /etc/g-sorcery/<1>
     only: f?portage && f?g-sorcery

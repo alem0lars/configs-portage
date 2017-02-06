@@ -2,28 +2,31 @@
 */* dot gles2 gpg kxb smi svc widevine smime egl jadetex pstricks
 */* pgo
 
-net-misc/tigervnc server
-app-emulation/wine staging
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
 app-emulation/virtualbox extensions
+app-emulation/wine staging
 app-misc/fzf bash-keybindings zsh-keybindings
 app-office/libreoffice google collada gltf odk vlc
-app-text/texlive xetex extra context detex dvi2tty epspdf games graphics humanities luatex metapost music omega pdfannotextractor pstricks publishers science tex4ht texi2html xindy
 app-text/texlive-core xetex
+app-text/texlive xetex extra context detex dvi2tty epspdf games graphics humanities luatex metapost music omega pdfannotextractor pstricks publishers science tex4ht texi2html xindy
 app-text/zathura-meta cb
 dev-db/sqlmap ntlm
+mail-client/mutt -berkdb -gdbm lmdb -qdbm -tokyocabinet
 mail-client/mutt sidebar notmuch
 media-libs/libpng apng
 media-sound/beets chroma convert discogs lastgenre opus replaygain
 net-analyzer/nmap ncat ndiff nping nmap-update
 net-libs/webkit-gtk -gles2
+net-misc/openconnect gssapi lz4 stoken
 net-misc/openvpn socks
+net-misc/tigervnc server
 net-wireless/gnuradio grc
 sys-apps/dstat wifi
 sys-apps/systemd importd
-sys-libs/zlib minizip
+sys-devel/autogen libopts
 sys-devel/distcc crossdev
+sys-libs/zlib minizip
 sys-process/htop oom
 x11-base/xorg-server xvfb
 x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth unicode3
