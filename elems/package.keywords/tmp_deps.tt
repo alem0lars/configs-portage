@@ -43,5 +43,9 @@ sys-libs/libseccomp ~amd64
 # Needed by `media-gfx/gimp`
 sys-libs/binutils-libs ~amd64
 
+# Needed by `app-misc/tmux`
+dev-libs/libevent **
+
+
 
 # vim: set filetype=eruby.gentoo-package-keywords :

@@ -79,6 +79,9 @@ sys-libs/zlib abi_x86_32
 # Needed by `net-wireless/gnuradio`
 dev-python/PyQt4 compat
 
+# Needed by `net-misc/tigervnc`
+x11-libs/libXvMC abi_x86_32
+
 # Needed by `app-emulation/wine`
 x11-libs/libXrender         abi_x86_32
 sys-apps/keyutils           abi_x86_32
