@@ -104,6 +104,8 @@ net-print/epson-inkjet-printer-escpr ~amd64
 
 sci-electronics/quartus-prime-lite ~amd64
 
+sys-apps/yarn ~amd64
+
 sys-kernel/dracut         ~amd64
 sys-kernel/linux-firmware ~amd64
 
