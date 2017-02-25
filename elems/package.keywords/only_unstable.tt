@@ -39,6 +39,9 @@
 # https://github.com/gentoo-haskell/gentoo-haskell#quickest-start
 */*::haskell ~amd64
 
+# alem0lars packages has only unstable packages by policy
+*/*::apo
+
 app-admin/eclean-kernel      ~amd64
 app-admin/lnav               ~amd64
 app-admin/salt               ~amd64
