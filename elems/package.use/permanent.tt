@@ -30,6 +30,7 @@ sys-devel/distcc crossdev
 sys-libs/zlib minizip
 sys-process/htop oom
 x11-base/xorg-server xvfb
+x11-misc/redshift geoclue
 x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth unicode3
 x11-drivers/xf86-video-intel uxa
 media-libs/opencv gtk
