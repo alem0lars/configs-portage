@@ -2,13 +2,14 @@ dev-util/radare2  **
 sys-devel/voltron **
 net-misc/megasync **
 
+app-emulation/docker   ~amd64
 dev-db/mongodb         ~amd64
-media-libs/opencv      ~amd64
 dev-lang/ruby          ~amd64
 dev-lang/rust          ~amd64
 dev-util/cargo         ~amd64
 dev-util/idea-ultimate ~amd64
 mail-client/mutt       ~amd64
+media-libs/opencv      ~amd64
 net-analyzer/suricata  ~amd64
 <net-libs/nodejs-7.0.0 ~amd64
 www-client/firefox     ~amd64
@@ -46,3 +47,8 @@ virtual/ruby*            ~amd64
 
 # Needed by `www-client/firefox`.
 dev-libs/nss ~amd64
+
+# Needed by `app-emulation/docker`.
+app-emulation/docker-proxy ~amd64
+app-emulation/docker-runc  ~amd64
+sys-process/tini           ~amd64
