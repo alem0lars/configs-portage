@@ -145,6 +145,8 @@ PYTHON_SINGLE_TARGET="python3_4"
 <% if has_feature? :ruby %>
 RUBY_TARGETS="ruby21 ruby23"
 <% end %>
+# ─────────────────────────────────────────────────────────────────── Unicorn ─┤
+UNICORN_TARGETS="aarch64 arm mips x86"
 # ──────────────────────────────────────────────────────── Custom ← Use Flags ─┤
 <% if local? :use_flags %>
 USE="${USE} <%= local!(:use_flags).join(" ") %>"

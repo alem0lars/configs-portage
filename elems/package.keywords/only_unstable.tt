@@ -82,6 +82,8 @@ dev-util/complexity                 ~amd64
 dev-util/dasht                      ~amd64
 dev-util/protege                    ~amd64
 dev-util/racer                      **
+dev-libs/capstone                   ~amd64
+dev-util/unicorn                    ~amd64
 dev-vcs/git-crypt                   ~amd64
 dev-vcs/git-imerge                  ~amd64
 dev-vcs/gitinspector                ~amd64
