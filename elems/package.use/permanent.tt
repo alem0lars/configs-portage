@@ -47,5 +47,8 @@ app-editors/vim vim-pager
 */* clang
 <% end %>
 
+# Needed by `net-wireless/gnuradio`.
+x11-libs/qwt qt4
+
 
 # vim: set filetype=eruby.gentoo-package-use :

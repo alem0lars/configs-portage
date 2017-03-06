@@ -13,6 +13,7 @@ net-analyzer/suricata  ~amd64
 <net-libs/nodejs-7.0.0 ~amd64
 www-client/firefox     ~amd64
 www-client/firefox-bin ~amd64
+www-client/phantomjs   ~amd64
 
 # Needed by `net-analyzer/suricata`.
 net-libs/libhtp ~amd64
