@@ -36,6 +36,9 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
+# Needed by `app-emulation/docker`
+sys-process/tini static
+
 # required by www-client/firefox-51.0::gentoo
 x11-libs/libXext abi_x86_32
 x11-libs/libX11  abi_x86_32
