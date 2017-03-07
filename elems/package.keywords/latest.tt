@@ -52,3 +52,4 @@ dev-libs/nss ~amd64
 app-emulation/docker-proxy ~amd64
 app-emulation/docker-runc  ~amd64
 sys-process/tini           ~amd64
+app-emulation/containerd   ~amd64
