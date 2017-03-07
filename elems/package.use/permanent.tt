@@ -35,6 +35,8 @@ x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth 
 x11-drivers/xf86-video-intel uxa
 media-libs/opencv gtk
 
+dev-util/unicorn unicorn_targets_x86
+
 <% if has_feature? :tmux %>
 app-misc/fzf tmux
 <% end %>
