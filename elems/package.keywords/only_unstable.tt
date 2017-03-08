@@ -107,6 +107,7 @@ net-misc/drive        ~amd64
 net-misc/megatools    ~amd64
 net-wireless/gnuradio ~amd64
 net-print/epson-inkjet-printer-escpr ~amd64
+net-analyzer/metasploit ~amd64
 
 sci-electronics/quartus-prime-lite ~amd64
 
@@ -127,6 +128,10 @@ x11-themes/arc-theme      ~amd64
 sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
+
+# Needed by `net-analyzer/metasploit`.
+app-eselect/eselect-metasploit ~amd64
+app-eselect/eselect-rails ~amd64
 
 # Needed by `dev-haskell/taffybar`
 dev-haskell/xdg-basedir     ~amd64
