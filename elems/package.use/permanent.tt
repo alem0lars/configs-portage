@@ -33,6 +33,7 @@ x11-misc/redshift geoclue
 x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth unicode3
 x11-drivers/xf86-video-intel uxa
 media-libs/opencv gtk
+www-client/uzbl experimental
 
 dev-util/unicorn unicorn_targets_x86
 
