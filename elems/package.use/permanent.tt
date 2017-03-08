@@ -1,5 +1,5 @@
 */* cairo
-*/* dot gles2 gpg kxb smi svc widevine smime egl jadetex pstricks
+*/* dot gpg kxb smi svc widevine smime egl jadetex pstricks
 */* pgo
 */* dri3 xvmc
 
@@ -18,7 +18,6 @@ mail-client/mutt sidebar notmuch
 media-libs/libpng apng
 media-sound/beets chroma convert discogs lastgenre opus replaygain
 net-analyzer/nmap ncat ndiff nping nmap-update
-net-libs/webkit-gtk -gles2
 net-misc/openconnect gssapi lz4 stoken
 net-misc/openvpn socks
 net-misc/tigervnc server
