@@ -4,6 +4,7 @@ net-misc/megasync **
 
 app-emulation/docker   ~amd64
 app-text/grip          ~amd64
+app-text/restview      ~amd64
 dev-db/mongodb         ~amd64
 dev-lang/ruby          ~amd64
 dev-lang/rust          ~amd64
