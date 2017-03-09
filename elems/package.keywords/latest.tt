@@ -3,6 +3,7 @@ sys-devel/voltron **
 net-misc/megasync **
 
 app-emulation/docker   ~amd64
+app-text/grip          ~amd64
 dev-db/mongodb         ~amd64
 dev-lang/ruby          ~amd64
 dev-lang/rust          ~amd64
@@ -18,6 +19,9 @@ www-client/firefox-bin ~amd64
 www-client/phantomjs   ~amd64
 www-client/surf        ~amd64
 www-client/uzbl        ~amd64
+
+# Needed by `app-text/grip`.
+dev-python/path-and-address ~amd64
 
 # Needed by `net-analyzer/suricata`.
 net-libs/libhtp ~amd64
