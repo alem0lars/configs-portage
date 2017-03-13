@@ -1,7 +1,7 @@
 */* cairo
 */* dot gpg kxb smi svc widevine smime egl jadetex pstricks
 */* pgo
-*/* dri3 xvmc
+*/* dri3 xvmc glamor
 
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
