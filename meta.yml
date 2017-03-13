@@ -20,6 +20,10 @@ elems:
     dst:  /etc/portage/<1>
     only: f?portage
 
+  - src:  ^(repos\.conf/go\.conf)$
+    dst:  /etc/portage/<1>
+    only: f?portage && f?go-repo
+
   - src:  ^(repos\.conf/rindeal\.conf)$
     dst:  /etc/portage/<1>
     only: f?portage

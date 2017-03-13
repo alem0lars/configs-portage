@@ -4,6 +4,7 @@ features:
   - pentoo-repo
   - haskell-repo
   - r-repo
+  - go-repo
   - crossdev
   - g-sorcery
 
