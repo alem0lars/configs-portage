@@ -8,3 +8,6 @@
 # Not working with ghc < 8.0.1
 >=x11-wm/xmonad-0.13
 >=x11-wm/xmonad-contrib-0.13
+
+# With use flag `notmuch` it doesn't compile (bug).
+=mail-client/mutt-1.8.0
