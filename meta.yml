@@ -20,6 +20,10 @@ elems:
     dst:  /etc/portage/<1>
     only: f?portage
 
+  - src:  ^(repos\.conf/vmware\.conf)$
+    dst:  /etc/portage/<1>
+    only: f?portage && f?vmware-repo
+
   - src:  ^(repos\.conf/go\.conf)$
     dst:  /etc/portage/<1>
     only: f?portage && f?go-repo

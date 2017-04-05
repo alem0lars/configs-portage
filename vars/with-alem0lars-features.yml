@@ -5,6 +5,7 @@ features:
   - haskell-repo
   - r-repo
   - go-repo
+  - vmware-repo
   - crossdev
   - g-sorcery
 
