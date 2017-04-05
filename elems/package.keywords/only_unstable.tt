@@ -131,6 +131,12 @@ sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
 
+# Needed by `app-emulation/vmware-player`.
+app-emulation/vmware-modules ~amd64
+dev-libs/libgcrypt           ~amd64
+app-emulation/vmware-tools   ~amd64
+dev-util/patchelf            ~amd64
+
 # Needed by `net-analyzer/metasploit`.
 app-eselect/eselect-metasploit ~amd64
 app-eselect/eselect-rails ~amd64
