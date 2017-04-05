@@ -95,7 +95,7 @@ dev-vcs/hub                         ~amd64
 media-fonts/hack           ~amd64
 media-gfx/plantuml         ~amd64
 media-gfx/pngquant         ~amd64
-media-plugins/gimp-gmic    ~amd64
+media-gfx/gmic             ~amd64
 media-plugins/gimp-lensfun ~amd64
 media-sound/beets          ~amd64
 media-sound/cmusfm         ~amd64

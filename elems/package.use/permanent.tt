@@ -2,6 +2,7 @@
 */* dot gpg kxb smi svc widevine smime egl jadetex pstricks
 */* pgo
 */* dri3 xvmc glamor
+*/* gimp
 
 media-libs/libvpx postproc
 app-doc/doxygen doxysearch
