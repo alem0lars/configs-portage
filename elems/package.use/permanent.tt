@@ -4,6 +4,8 @@
 */* dri3 xvmc glamor
 */* gimp
 
+net-print/gutenprint gtk
+media-gfx/ufraw gtk
 media-libs/libvpx postproc
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
