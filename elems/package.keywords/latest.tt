@@ -21,6 +21,11 @@ www-client/phantomjs   ~amd64
 www-client/surf        ~amd64
 www-client/uzbl        ~amd64
 
+# Needed by `dev-lang/cargo`.
+sys-libs/compiler-rt            ~amd64
+app-vim/llvm-vim                ~amd64
+sys-libs/compiler-rt-sanitizers ~amd64
+
 # Needed by `app-text/grip`.
 dev-python/path-and-address ~amd64
 
