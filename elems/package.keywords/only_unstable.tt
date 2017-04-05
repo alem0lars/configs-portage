@@ -50,6 +50,7 @@ app-crypt/hashcat            ~amd64
 app-editors/neovim           ~amd64
 app-emacs/ghc-mod            ~amd64
 app-emulation/vagrant        ~amd64
+app-emulation/vmware-player  ~amd64
 app-emulation/wine           ~amd64
 app-emulation/winetricks     ~amd64
 app-forensics/afl            ~amd64
@@ -191,7 +192,13 @@ dev-python/colorama         ~amd64
 media-libs/lensfun ~amd64
 
 # Needed by `dev-python/twisted`
-dev-python/pyopenssl ~amd64
+dev-python/pyopenssl            ~amd64
+sys-libs/compiler-rt-sanitizers ~amd64
+app-vim/llvm-vim                ~amd64
+dev-python/incremental          ~amd64
+dev-python/constantly           ~amd64
+dev-python/m2r                  ~amd64
+dev-python/automat              ~amd64
 
 # Needed by `media-sound/beets`
 dev-python/jellyfish  ~amd64

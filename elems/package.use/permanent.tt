@@ -4,6 +4,7 @@
 */* dri3 xvmc glamor
 */* gimp
 
+media-libs/libvpx postproc
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
 app-emulation/virtualbox extensions
