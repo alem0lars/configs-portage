@@ -50,7 +50,6 @@ app-crypt/hashcat            ~amd64
 app-editors/neovim           ~amd64
 app-emacs/ghc-mod            ~amd64
 app-emulation/vagrant        ~amd64
-app-emulation/vmware-player  ~amd64
 app-emulation/wine           ~amd64
 app-emulation/winetricks     ~amd64
 app-forensics/afl            ~amd64
@@ -130,12 +129,6 @@ x11-themes/arc-theme      ~amd64
 sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
-
-# Needed by `app-emulation/vmware-player`.
-app-emulation/vmware-modules ~amd64
-dev-libs/libgcrypt           ~amd64
-app-emulation/vmware-tools   ~amd64
-dev-util/patchelf            ~amd64
 
 # Needed by `net-analyzer/metasploit`.
 app-eselect/eselect-metasploit ~amd64
