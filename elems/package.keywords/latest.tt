@@ -16,6 +16,7 @@ dev-util/idea-ultimate ~amd64
 mail-client/mutt       ~amd64
 media-libs/opencv      ~amd64
 net-analyzer/suricata  ~amd64
+net-im/skype           ~amd64
 net-im/slack-bin       ~amd64
 <net-libs/nodejs-7.0.0 ~amd64
 www-client/firefox     ~amd64

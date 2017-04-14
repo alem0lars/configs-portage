@@ -35,9 +35,6 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-# Doesn't support newer ruby versions yet.
-media-libs/libcaca ruby_targets_ruby20
-
 # Doesn't support python 3 yet.
 app-text/asciidoc python_single_target_python2_7
 
