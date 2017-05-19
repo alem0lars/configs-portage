@@ -15,6 +15,7 @@ features:
   - avahi
   - cups
 
+  - go
   - python
   - ruby
   - java

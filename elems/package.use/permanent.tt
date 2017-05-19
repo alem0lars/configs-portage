@@ -53,6 +53,10 @@ app-editors/vim vim-pager
 */* clang
 <% end %>
 
+<% if has_feature? :go %>
+*/* go
+<% end %>
+
 # Needed by `net-wireless/gnuradio`.
 x11-libs/qwt qt4
 
