@@ -4,6 +4,7 @@ dev-util/webstorm **
 net-misc/megasync **
 sys-devel/voltron **
 
+sci-mathematics/rstudio ~amd64
 app-emulation/docker   ~amd64
 app-text/grip          ~amd64
 app-text/restview      ~amd64
