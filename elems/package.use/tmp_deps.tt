@@ -35,6 +35,9 @@
 #                                                                              │
 # ─────────────────────────────────────────────────────────────────────────────┘
 
+# Needed by `sci-mathematics/rstudio`
+dev-qt/* qt5 gles2
+
 # Needed by `net-im/skype`.
 dev-qt/qtdbus            abi_x86_32
 dev-qt/qtwebkit          -exceptions
