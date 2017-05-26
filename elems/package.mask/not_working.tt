@@ -1,7 +1,7 @@
 # vagrant ebuild doesn't declare the dependency correctly
 # see: https://bugs.gentoo.org/show_bug.cgi?id=608522
 # when the issue is resolved, the following line can be removed..
->=dev-ruby/childprocess-0.6.1
+# >=dev-ruby/childprocess-0.6.1
 
 # A lot of packages don't work atm.
 >=dev-lang/ghc-8.0.0

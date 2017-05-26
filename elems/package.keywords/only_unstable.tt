@@ -131,6 +131,9 @@ sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
 
+# Needed by `media-gfx/pngquant`
+media-libs/libpng ~amd64
+
 # Needed by `app-forensics/afl`.
 app-crypt/rhash ~amd64
 
@@ -197,7 +200,6 @@ media-libs/lensfun ~amd64
 # Needed by `dev-python/twisted`
 dev-python/pyopenssl            ~amd64
 sys-libs/compiler-rt-sanitizers ~amd64
-app-vim/llvm-vim                ~amd64
 dev-python/incremental          ~amd64
 dev-python/constantly           ~amd64
 dev-python/m2r                  ~amd64

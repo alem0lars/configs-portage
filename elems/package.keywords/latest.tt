@@ -26,12 +26,23 @@ www-client/phantomjs   ~amd64
 www-client/surf        ~amd64
 www-client/uzbl        ~amd64
 
+# Needed by `app-text/restview`
+dev-python/webencodings ~amd64
+dev-python/html5lib ~amd64
+dev-python/readme_renderer ~amd64
+dev-python/bleach ~amd64
+dev-python/docutils ~amd64
+
+# required by media-gfx/inkscape-0.92.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+=media-gfx/scour-0.35-r1 ~amd64
+
 # Needed by `dev-lang/rstudio`
 dev-libs/mathjax ~amd64
 
 # Needed by `dev-lang/cargo`.
 sys-libs/compiler-rt            ~amd64
-app-vim/llvm-vim                ~amd64
 sys-libs/compiler-rt-sanitizers ~amd64
 
 # Needed by `app-text/grip`.
@@ -51,10 +62,7 @@ sys-devel/gcc         ~amd64
 dev-libs/libuv ~amd64
 
 # Needed by `dev-lang/rust`.
-sys-devel/llvm           ~amd64
-sys-devel/clang-runtime  ~amd64
 sys-libs/libomp          ~amd64
-sys-devel/clang          ~amd64
 dev-util/cmake           ~amd64
 app-eselect/eselect-rust ~amd64
 

@@ -3,9 +3,10 @@
 */* pgo
 */* dri3 xvmc glamor
 */* gimp
+*/* qt4 qt5 gtk gtk3 widgets gui
+*/* gles2
+*/* usbredir
 
-net-print/gutenprint gtk
-media-gfx/ufraw gtk
 media-libs/libvpx postproc
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
@@ -36,8 +37,14 @@ x11-base/xorg-server xvfb
 x11-misc/redshift geoclue
 x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth unicode3
 x11-drivers/xf86-video-intel uxa
-media-libs/opencv gtk
 www-client/uzbl experimental
+
+# To respect: `at-most-one-of ( qt4 qt5 )`
+net-wireless/wpa_supplicant -qt4
+app-crypt/pinentry -qt4
+
+# To respect: `( exactly-one-of ( gles2 opengl ) )`
+net-libs/webkit-gtk -gles2
 
 dev-util/unicorn unicorn_targets_x86
 
@@ -56,9 +63,6 @@ app-editors/vim vim-pager
 <% if has_feature? :go %>
 */* go
 <% end %>
-
-# Needed by `net-wireless/gnuradio`.
-x11-libs/qwt qt4
 
 
 # vim: set filetype=eruby.gentoo-package-use :
