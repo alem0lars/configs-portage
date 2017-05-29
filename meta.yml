@@ -16,6 +16,11 @@ elems:
     dst:  /etc/portage/<1>
     only: f?portage
 
+  - src:  ^(repo\.postsync\.d/.+)$
+    dst:  /etc/portage/<1>
+    perms: 755
+    only: f?portage
+
   - src:  ^(repos\.conf/gentoo\.conf)$
     dst:  /etc/portage/<1>
     only: f?portage

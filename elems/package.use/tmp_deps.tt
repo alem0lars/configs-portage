@@ -43,9 +43,16 @@ x11-libs/gdk-pixbuf abi_x86_32
 x11-libs/gtk+ abi_x86_32
 
 # Needed by `sci-physics/root`
-dev-qt/qtsql qt3support
-dev-qt/qtgui qt3support
+dev-db/mariadb abi_x86_32
 dev-qt/qtcore qt3support
+dev-qt/qtgui qt3support
+dev-qt/qtopengl qt3support
+dev-qt/qtsql abi_x86_32
+dev-qt/qtsql qt3support
+virtual/libmysqlclient abi_x86_32
+
+# Needed by `net-wireless/gnuradio`
+dev-qt/qt3support abi_x86_32
 
 # Needed by `app-emulation/virt-manager`
 media-libs/libepoxy abi_x86_32

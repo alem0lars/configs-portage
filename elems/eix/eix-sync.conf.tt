@@ -32,11 +32,4 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-# Sync all overlays.
-*
-
-# Regenerate overlay metadata.
-@emerge --regen || true
-
-
 # vim: set filetype=eruby.dosini :

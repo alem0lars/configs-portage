@@ -33,10 +33,8 @@ dev-python/readme_renderer ~amd64
 dev-python/bleach ~amd64
 dev-python/docutils ~amd64
 
-# required by media-gfx/inkscape-0.92.1-r1::gentoo
-# required by @selected
-# required by @world (argument)
-=media-gfx/scour-0.35-r1 ~amd64
+# Needed by `media-gfx/inkscape`
+media-gfx/scour ~amd64
 
 # Needed by `dev-lang/rstudio`
 dev-libs/mathjax ~amd64

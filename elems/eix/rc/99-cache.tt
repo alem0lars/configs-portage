@@ -32,10 +32,4 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-<% if has_feature? :sqlite %>
-PORTDIR_CACHE_METHOD="sqlite"
-OVERLAY_CACHE_METHOD="parse"
-<% end %>
-
-
 # vim: set filetype=eruby :
