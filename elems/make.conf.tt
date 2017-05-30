@@ -137,13 +137,15 @@ FETCHCOMMAND="wget -t 3 -T 60 --passive-ftp --limit-rate=192k -O \"\${DISTDIR}/\
 RESUMECOMMAND="wget -c -t 3 -T 60 --passive-ftp --limit-rate=192k -O \"\${DISTDIR}/\${FILE}\" \"\${URI}\""
 # ──────────────────────────────────────────────────────────────────── Python ─┤
 <% if has_feature? :python %>
-PYTHON_TARGETS="python2_7 python3_4"
-USE_PYTHON="2.7" # Version `3.4` isn't available yet.
-PYTHON_SINGLE_TARGET="python3_4"
+# TODO +iamben suggets to use the default version
+# PYTHON_TARGETS="python2_7 python3_4"
+# USE_PYTHON="2.7" # Version `3.4` isn't available yet.
+# PYTHON_SINGLE_TARGET="python3_4"
 <% end %>
 # ────────────────────────────────────────────────────────────────────── Ruby ─┤
 <% if has_feature? :ruby %>
-RUBY_TARGETS="ruby21 ruby23"
+# +iamben suggets to use the default version
+# RUBY_TARGETS="ruby21 ruby23"
 <% end %>
 # ──────────────────────────────────────────────────────── Custom ← Use Flags ─┤
 <% if local? :use_flags %>

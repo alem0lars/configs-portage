@@ -108,8 +108,10 @@ net-misc/drive        ~amd64
 net-misc/megatools    ~amd64
 net-wireless/gnuradio ~amd64
 net-print/epson-inkjet-printer-escpr ~amd64
-net-analyzer/metasploit ~amd64
 net-vpn/logmein-hamachi ~amd64
+
+# Works with the default RUBY_TARGETS
+<net-analyzer/metasploit-4.13 ~amd64
 
 sci-electronics/quartus-prime-lite ~amd64
 

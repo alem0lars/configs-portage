@@ -78,9 +78,6 @@ dev-qt/qtwebkit          -exceptions
 x11-libs/libXScrnSaver   abi_x86_32
 x11-proto/scrnsaverproto abi_x86_32
 
-# Needed by `app-emulation/docker`.
-sys-process/tini static
-
 # Needed by www-client/firefox-51.0::gentoo
 x11-libs/libXext abi_x86_32
 x11-libs/libX11  abi_x86_32
@@ -108,9 +105,6 @@ x11-libs/libxcb            abi_x86_32
 x11-libs/libXau            abi_x86_32
 dev-libs/libpthread-stubs  abi_x86_32
 x11-proto/xcb-proto        abi_x86_32
-
-# Needed by `app-emulation/docker`
-sys-libs/libseccomp static-libs
 
 # Needed by `app-misc/nitrokey-app`
 dev-libs/libpcre* pcre16

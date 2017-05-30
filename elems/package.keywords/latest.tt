@@ -5,9 +5,7 @@ net-misc/megasync **
 sys-devel/voltron **
 
 sci-mathematics/rstudio ~amd64
-app-emulation/docker   ~amd64
 app-text/grip          ~amd64
-app-text/restview      ~amd64
 dev-db/mongodb         ~amd64
 dev-lang/python        ~amd64
 dev-lang/ruby          ~amd64
@@ -25,13 +23,6 @@ www-client/firefox-bin ~amd64
 www-client/phantomjs   ~amd64
 www-client/surf        ~amd64
 www-client/uzbl        ~amd64
-
-# Needed by `app-text/restview`
-dev-python/webencodings ~amd64
-dev-python/html5lib ~amd64
-dev-python/readme_renderer ~amd64
-dev-python/bleach ~amd64
-dev-python/docutils ~amd64
 
 # Needed by `media-gfx/inkscape`
 media-gfx/scour ~amd64
@@ -74,9 +65,3 @@ virtual/ruby*            ~amd64
 
 # Needed by `www-client/firefox`.
 dev-libs/nss ~amd64
-
-# Needed by `app-emulation/docker`.
-app-emulation/docker-proxy ~amd64
-app-emulation/docker-runc  ~amd64
-sys-process/tini           ~amd64
-app-emulation/containerd   ~amd64
