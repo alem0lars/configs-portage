@@ -5,24 +5,18 @@ net-misc/megasync **
 sys-devel/voltron **
 
 sci-mathematics/rstudio ~amd64
-app-text/grip          ~amd64
-dev-db/mongodb         ~amd64
-dev-lang/python        ~amd64
-dev-lang/ruby          ~amd64
-dev-lang/rust          ~amd64
-dev-util/cargo         ~amd64
-dev-util/idea-ultimate ~amd64
-mail-client/mutt       ~amd64
-media-libs/opencv      ~amd64
-net-analyzer/suricata  ~amd64
-net-im/skype           ~amd64
-net-im/slack-bin       ~amd64
-<net-libs/nodejs-7.0.0 ~amd64
-www-client/firefox     ~amd64
-www-client/firefox-bin ~amd64
-www-client/phantomjs   ~amd64
-www-client/surf        ~amd64
-www-client/uzbl        ~amd64
+app-text/grip           ~amd64
+dev-lang/python         ~amd64
+dev-lang/ruby           ~amd64
+dev-lang/rust           ~amd64
+dev-util/cargo          ~amd64
+dev-util/idea-ultimate  ~amd64
+mail-client/mutt        ~amd64
+media-libs/opencv       ~amd64
+net-analyzer/suricata   ~amd64
+net-im/skype            ~amd64
+net-im/slack-bin        ~amd64
+<net-libs/nodejs-7.0.0  ~amd64
 
 # Needed by `media-gfx/inkscape`
 media-gfx/scour ~amd64
@@ -40,13 +34,6 @@ dev-python/path-and-address ~amd64
 # Needed by `net-analyzer/suricata`.
 net-libs/libhtp ~amd64
 
-# Needed by `dev-db/mongodb`
-app-admin/mongo-tools ~amd64
-dev-libs/boost        ~amd64
-dev-libs/libpcre      ~amd64
-dev-util/boost-build  ~amd64
-sys-devel/gcc         ~amd64
-
 # Needed by `net-libs/nodejs`.
 dev-libs/libuv ~amd64
 
@@ -62,6 +49,3 @@ app-shells/bash-completion ~amd64
 app-eselect/eselect-ruby ~amd64
 dev-ruby/*               ~amd64
 virtual/ruby*            ~amd64
-
-# Needed by `www-client/firefox`.
-dev-libs/nss ~amd64
