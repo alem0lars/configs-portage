@@ -51,7 +51,6 @@ dev-util/unicorn unicorn_targets_x86
 app-shells/fzf tmux
 <% end %>
 <% if has_feature? :vim %>
-app-shells/fzf vim neovim
 app-editors/vim vim-pager
 <% end %>
 
