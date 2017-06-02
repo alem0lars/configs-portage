@@ -35,6 +35,13 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
+<% if has_feature? :zsh %>
+# XXX Unfortunately bash completion is always sourced (doesn't check if the
+#     current shell is zsh) and it is incompatible with zsh, so this is the only
+#     way to prevent bash completion to be also sourced in zsh
+app-shells/fzf -bash-completion
+<% end %>
+
 # Doesn't support python 3 yet.
 app-text/asciidoc python_single_target_python2_7
 
