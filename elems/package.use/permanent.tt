@@ -12,7 +12,6 @@ app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
 app-emulation/virtualbox extensions
 app-emulation/wine staging
-app-misc/fzf bash-keybindings zsh-keybindings
 app-office/libreoffice google collada gltf odk vlc
 app-text/texlive-core xetex
 app-text/texlive xetex extra context detex dvi2tty epspdf games graphics humanities luatex metapost music omega pdfannotextractor pstricks publishers science tex4ht texi2html xindy
@@ -49,10 +48,10 @@ net-libs/webkit-gtk -gles2
 dev-util/unicorn unicorn_targets_x86
 
 <% if has_feature? :tmux %>
-app-misc/fzf tmux
+app-shells/fzf tmux
 <% end %>
 <% if has_feature? :vim %>
-app-misc/fzf vim
+app-shells/fzf vim neovim
 app-editors/vim vim-pager
 <% end %>
 
