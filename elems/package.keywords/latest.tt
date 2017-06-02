@@ -24,28 +24,28 @@ media-gfx/scour ~amd64
 # Needed by `dev-lang/rstudio`
 dev-libs/mathjax ~amd64
 
-# Needed by `dev-lang/cargo`.
+# Needed by `dev-lang/cargo`
 sys-libs/compiler-rt            ~amd64
 sys-libs/compiler-rt-sanitizers ~amd64
 
-# Needed by `app-text/grip`.
+# Needed by `app-text/grip`
 dev-python/path-and-address ~amd64
 
-# Needed by `net-analyzer/suricata`.
+# Needed by `net-analyzer/suricata`
 net-libs/libhtp ~amd64
 
-# Needed by `net-libs/nodejs`.
+# Needed by `net-libs/nodejs`
 dev-libs/libuv ~amd64
 
-# Needed by `dev-lang/rust`.
+# Needed by `dev-lang/rust`
 sys-libs/libomp          ~amd64
 dev-util/cmake           ~amd64
 app-eselect/eselect-rust ~amd64
 
-# Needed by `mail-client/mutt`.
+# Needed by `mail-client/mutt`
 app-shells/bash-completion ~amd64
 
-# Needed by `dev-lang/ruby`.
+# Needed by `dev-lang/ruby`
 app-eselect/eselect-ruby ~amd64
 dev-ruby/*               ~amd64
 virtual/ruby*            ~amd64
