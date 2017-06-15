@@ -36,6 +36,8 @@
 #                                                                              │
 # ─────────────────────────────────────────────────────────────────────────────┘
 
+# Needed by dev-python/tmuxp
+dev-python/click ~amd64
 
 # Needed by `net-analyzer/nmap`
 sys-libs/libseccomp ~amd64
