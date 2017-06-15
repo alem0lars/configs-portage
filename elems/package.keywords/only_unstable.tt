@@ -58,7 +58,6 @@ app-forensics/scalpel        ~amd64
 app-i18n/translate-shell     ~amd64
 app-misc/geeknote            ~amd64
 app-misc/buku                ~amd64
-app-misc/fzf                 ~amd64
 app-misc/nitrokey-app        ~amd64
 app-misc/tmsu                ~amd64
 app-misc/tmuxinator          ~amd64
@@ -104,7 +103,6 @@ net-misc/teamviewer   ~amd64
 net-analyzer/tsung    ~amd64
 net-analyzer/bro      ~amd64
 net-misc/httpie       ~amd64
-net-misc/drive        ~amd64
 net-misc/megatools    ~amd64
 net-wireless/gnuradio ~amd64
 net-print/epson-inkjet-printer-escpr ~amd64

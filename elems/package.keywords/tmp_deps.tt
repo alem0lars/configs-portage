@@ -1,7 +1,7 @@
 # ─────────────────────────────────────────────────────────────────────────────┐
 #                                                                              │
 # File informations:                                                           │
-# - Name:    elems/package.keywords/tmp_deps.conf.tt                           │
+# - Name:    elems/package.keywords/tmp_deps.tt                                │
 # - Summary: Package keywords needed for dependencies.                         │
 #            Those package keywords aren't wanted, but they are needed at the  │
 #            moment.                                                           │
@@ -47,7 +47,6 @@ sys-libs/binutils-libs ~amd64
 
 # Needed by `app-misc/tmux`
 dev-libs/libevent **
-
 
 
 # vim: set filetype=eruby.gentoo-package-keywords :

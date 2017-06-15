@@ -35,6 +35,7 @@ features:
 
   - zsh
   - vim
+  - neovim
   - tmux
 
 
