@@ -204,6 +204,7 @@ dev-python/incremental          ~amd64
 dev-python/constantly           ~amd64
 dev-python/m2r                  ~amd64
 dev-python/automat              ~amd64
+dev-python/hyperlink            ~amd64
 
 # Needed by `media-sound/beets`
 dev-python/jellyfish  ~amd64
