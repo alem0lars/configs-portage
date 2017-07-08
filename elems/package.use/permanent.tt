@@ -42,6 +42,7 @@ www-client/uzbl experimental
 # To respect: `at-most-one-of ( qt4 qt5 )`
 net-wireless/wpa_supplicant -qt4
 app-crypt/pinentry -qt4
+media-libs/opencv -qt4
 
 # To respect: `( exactly-one-of ( gles2 opengl ) )`
 net-libs/webkit-gtk -gles2

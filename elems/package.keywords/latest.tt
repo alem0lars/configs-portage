@@ -10,19 +10,10 @@ dev-lang/python         ~amd64
 dev-lang/ruby           ~amd64
 dev-lang/rust           ~amd64
 dev-util/cargo          ~amd64
-dev-util/idea-ultimate  ~amd64
-mail-client/mutt        ~amd64
-media-libs/opencv       ~amd64
 net-analyzer/suricata   ~amd64
 net-im/skype            ~amd64
 net-im/slack-bin        ~amd64
 <net-libs/nodejs-7.0.0  ~amd64
-
-# Needed by `media-gfx/inkscape`
-media-gfx/scour ~amd64
-
-# Needed by `dev-lang/rstudio`
-dev-libs/mathjax ~amd64
 
 # Needed by `dev-lang/cargo`
 sys-libs/compiler-rt            ~amd64
