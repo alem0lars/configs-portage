@@ -1,7 +1,8 @@
 */* cairo
 */* dot gpg kxb smi svc widevine smime egl jadetex pstricks
 */* pgo
-*/* dri3 xvmc glamor
+# */* dri3 xvmc
+*/* glamor
 */* gimp
 */* qt4 qt5 gtk gtk3 widgets gui
 */* gles2
@@ -36,12 +37,13 @@ sys-process/htop oom
 x11-base/xorg-server xvfb
 x11-misc/redshift geoclue
 x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth unicode3
-x11-drivers/xf86-video-intel uxa
+# x11-drivers/xf86-video-intel uxa
 www-client/uzbl experimental
 
 # To respect: `at-most-one-of ( qt4 qt5 )`
 net-wireless/wpa_supplicant -qt4
 app-crypt/pinentry -qt4
+media-libs/opencv -qt4
 
 # To respect: `( exactly-one-of ( gles2 opengl ) )`
 net-libs/webkit-gtk -gles2

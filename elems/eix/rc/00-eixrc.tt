@@ -62,4 +62,8 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
+# Disable status-line updates.
+NOSTATUSLINE=true
+
+
 # vim: set filetype=eruby :

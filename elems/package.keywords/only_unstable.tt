@@ -131,6 +131,9 @@ sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
 
+# Needed by `dev-libs/capstone`
+dev-python/capstone-python ~amd64
+
 # Needed by `media-gfx/pngquant`
 media-libs/libpng ~amd64
 
@@ -204,6 +207,7 @@ dev-python/incremental          ~amd64
 dev-python/constantly           ~amd64
 dev-python/m2r                  ~amd64
 dev-python/automat              ~amd64
+dev-python/hyperlink            ~amd64
 
 # Needed by `media-sound/beets`
 dev-python/jellyfish  ~amd64

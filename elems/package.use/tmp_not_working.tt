@@ -35,6 +35,10 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
+# Gives error:
+#   libtool: line : none: command not found
+dev-vcs/subversion -ruby
+
 <% if has_feature? :zsh %>
 # XXX Unfortunately bash completion is always sourced (doesn't check if the
 #     current shell is zsh) and it is incompatible with zsh, so this is the only
