@@ -7,6 +7,7 @@
 */* gles2
 */* usbredir
 
+net-dns/dnsmasq script dhcp-tools dhcp
 media-libs/libvpx postproc
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
