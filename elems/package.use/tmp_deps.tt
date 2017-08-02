@@ -35,6 +35,10 @@
 #                                                                              │
 # ─────────────────────────────────────────────────────────────────────────────┘
 
+# Needed by `net-im/telegram-desktop`
+virtual/ffmpeg opus
+media-video/ffmpeg opus
+
 # Needed by `sys-devel/distcc`
 x11-libs/gtk+ abi_x86_32
 dev-libs/atk abi_x86_32
