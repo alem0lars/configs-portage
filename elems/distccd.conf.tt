@@ -36,6 +36,7 @@ end %>
 
 
 [Service]
+# Set allowed build servers.
 Environment="ALLOWED_SERVERS='<%= local!(:allowed).join(" ") %>'"
 
 

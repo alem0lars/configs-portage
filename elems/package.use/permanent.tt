@@ -8,6 +8,8 @@
 */* gles2
 */* usbredir
 
+media-libs/openal utils
+net-dns/dnsmasq lua script dhcp dhcp-tools dnssec
 media-libs/libvpx postproc
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
