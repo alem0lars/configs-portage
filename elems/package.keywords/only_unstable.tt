@@ -42,6 +42,8 @@
 # alem0lars packages has only unstable packages by policy
 */*::apo
 
+net-im/telegram-desktop-bin ~amd64
+
 app-admin/eclean-kernel      ~amd64
 app-admin/lnav               ~amd64
 app-admin/salt               ~amd64
