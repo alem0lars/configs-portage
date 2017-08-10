@@ -36,16 +36,21 @@
 #                                                                              │
 # ─────────────────────────────────────────────────────────────────────────────┘
 
-# Needed by dev-python/tmuxp
+
+# Needed by `dev-python/twisted`
+dev-python/cryptography ~amd64
+dev-python/asn1crypto ~amd64
+
+# Needed by `dev-python/tmuxp`.
 dev-python/click ~amd64
 
-# Needed by `net-analyzer/nmap`
+# Needed by `net-analyzer/nmap`.
 sys-libs/libseccomp ~amd64
 
-# Needed by `media-gfx/gimp`
+# Needed by `media-gfx/gimp`.
 sys-libs/binutils-libs ~amd64
 
-# Needed by `app-misc/tmux`
+# Needed by `app-misc/tmux`.
 dev-libs/libevent **
 
 
