@@ -32,4 +32,8 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
+# Also sync ebuild repositories.
+*
+
+
 # vim: set filetype=eruby.dosini :
