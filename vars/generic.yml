@@ -40,6 +40,8 @@ portage:
     # -> Audio
     - flac
     - ogg
+    - mp3
+    - vorbis
     # -> Docs
     - postscript
     - djvu

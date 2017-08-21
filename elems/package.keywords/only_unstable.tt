@@ -42,8 +42,6 @@
 # alem0lars packages has only unstable packages by policy
 */*::apo
 
-net-im/telegram-desktop-bin ~amd64
-
 app-admin/eclean-kernel      ~amd64
 app-admin/lnav               ~amd64
 app-admin/salt               ~amd64
@@ -71,22 +69,22 @@ app-emulation/packer         ~amd64
 
 dev-db/sqlmap                       ~amd64
 dev-lang/julia                      ~amd64
+dev-libs/capstone                   ~amd64
+dev-libs/unicorn-bindings           ~amd64
+dev-python/mwclient                 ~amd64
 dev-python/sympy                    ~amd64
 dev-python/twisted                  ~amd64
-dev-python/mwclient                 ~amd64
 dev-ruby/awesome_print              ~amd64
 dev-ruby/pry                        ~amd64
 dev-ruby/thor                       ~amd64
-dev-util/heroku-client              ~amd64
-dev-util/dex2jar                    ~amd64
 dev-util/android-sdk-update-manager ~amd64
 dev-util/complexity                 ~amd64
 dev-util/dasht                      ~amd64
+dev-util/dex2jar                    ~amd64
+dev-util/heroku-client              ~amd64
 dev-util/protege                    ~amd64
 dev-util/racer                      **
-dev-libs/capstone                   ~amd64
 dev-util/unicorn                    ~amd64
-dev-libs/unicorn-bindings           ~amd64
 dev-vcs/git-crypt                   ~amd64
 dev-vcs/git-imerge                  ~amd64
 dev-vcs/gitinspector                ~amd64
@@ -99,16 +97,18 @@ media-gfx/gmic             ~amd64
 media-plugins/gimp-lensfun ~amd64
 media-sound/beets          ~amd64
 media-sound/cmusfm         ~amd64
+media-sound/playerctl      ~amd64
 
-net-misc/icaclient    ~amd64
-net-misc/teamviewer   ~amd64
-net-analyzer/tsung    ~amd64
-net-analyzer/bro      ~amd64
-net-misc/httpie       ~amd64
-net-misc/megatools    ~amd64
-net-wireless/gnuradio ~amd64
+net-analyzer/tsung                   ~amd64
+net-analyzer/bro                     ~amd64
+net-im/telegram-desktop-bin          ~amd64
+net-misc/icaclient                   ~amd64
+net-misc/teamviewer                  ~amd64
+net-misc/httpie                      ~amd64
+net-misc/megatools                   ~amd64
 net-print/epson-inkjet-printer-escpr ~amd64
-net-vpn/logmein-hamachi ~amd64
+net-vpn/logmein-hamachi              ~amd64
+net-wireless/gnuradio                ~amd64
 
 # Works with the default RUBY_TARGETS
 <net-analyzer/metasploit-4.13 ~amd64
