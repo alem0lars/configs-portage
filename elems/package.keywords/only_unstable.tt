@@ -71,6 +71,7 @@ dev-db/sqlmap                       ~amd64
 dev-lang/julia                      ~amd64
 dev-libs/capstone                   ~amd64
 dev-libs/unicorn-bindings           ~amd64
+dev-libs/log4cxx                    ~amd64
 dev-python/mwclient                 ~amd64
 dev-python/sympy                    ~amd64
 dev-python/twisted                  ~amd64
