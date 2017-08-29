@@ -53,5 +53,8 @@ sys-libs/binutils-libs ~amd64
 # Needed by `app-misc/tmux`.
 dev-libs/libevent **
 
+# Needed by `app-text/pandoc`
+app-text/cmark ~amd64
+
 
 # vim: set filetype=eruby.gentoo-package-keywords :
