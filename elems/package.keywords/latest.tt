@@ -13,7 +13,7 @@ dev-util/cargo          ~amd64
 net-analyzer/suricata   ~amd64
 net-im/skype            ~amd64
 net-im/slack-bin        ~amd64
-<net-libs/nodejs-7.0.0  ~amd64
+net-libs/nodejs         ~amd64
 
 # Needed by `dev-lang/cargo`
 sys-libs/compiler-rt            ~amd64
