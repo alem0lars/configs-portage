@@ -39,7 +39,8 @@ def native_flags_for(lang, banned_keywords)
 end
 
 define_locals do
-  variable :"cpu.parallelism",       type: :int,     as: :cpu_parallelism
+  variable :"cpu.max_jobs", type: :int, as: :cpu_max_jobs
+  variable :"cpu.max_load", type: :int, as: :cpu_max_load
 
   variable :"portage.make.cflags", as: :custom_cflags
   variable :"portage.make.cxxflags", as: :custom_cxxflags
@@ -47,8 +48,6 @@ define_locals do
   variable :"portage.video_cards", as: :video_cards
   variable :"portage.use_flags", as: :use_flags
   variable :"portage.license", as: :license
-
-  computed(:max_jobs_count)  { local!(:cpu_parallelism) * 2 + 1 }
 
   computed(:cflags_banned_keyword) { %w(-fstack-protector-strong) }
 
@@ -92,7 +91,7 @@ CXXFLAGS="-O2 -pipe <%= local! :cxxflags %>"
 CXXFLAGS="${CXXFLAGS} <%= Array(local!(:custom_cxxflags)).join(" ") %>"
 <% end %>
 
-MAKEOPTS="-j<%= local! :max_jobs_count %> -l<%= local! :max_jobs_count %>"
+MAKEOPTS="-j<%= local! :cpu_max_jobs %> -l<%= local! :cpu_max_load %>"
 
 # TODO: All targets are needed by multitarget in llvm ebuild, which is needed
 #       by rust.
@@ -123,8 +122,8 @@ PORTAGE_NICENESS=19
 
 EMERGE_DEFAULT_OPTS="--with-bdeps=y --keep-going=y --quiet-unmerge-warn"
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --quiet-build=y --verbose"
-EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --jobs=<%= local! :cpu_parallelism %>"
-EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --load=<%= local! :cpu_parallelism %>"
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --jobs=<%= local! :cpu_max_jobs %>"
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --load=<%= local! :cpu_max_load %>"
 
 # Minimum size of existing file for RESUMECOMMAND to be called.
 PORTAGE_FETCH_RESUME_MIN_SIZE="192K"

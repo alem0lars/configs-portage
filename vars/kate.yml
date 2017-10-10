@@ -18,7 +18,8 @@ portage:
       dir: /usr/local/portage
 
 cpu:
-  parallelism: 8
+  max_jobs: 4
+  max_load: 4
 
 
 # vim: set filetype=eruby.yaml :

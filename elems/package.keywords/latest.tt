@@ -8,12 +8,16 @@ sci-mathematics/rstudio ~amd64
 app-text/grip           ~amd64
 dev-lang/python         ~amd64
 dev-lang/ruby           ~amd64
-dev-lang/rust           ~amd64
+#dev-lang/rust           ~amd64
+virtual/rust            ~amd64
 dev-util/cargo          ~amd64
 net-analyzer/suricata   ~amd64
 net-im/skype            ~amd64
 net-im/slack-bin        ~amd64
 net-libs/nodejs         ~amd64
+
+# Needed by `www-client/chromium`
+net-libs/nghttp2 ~amd64
 
 # Needed by `dev-lang/cargo`
 sys-libs/compiler-rt            ~amd64

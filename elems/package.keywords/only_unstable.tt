@@ -199,6 +199,7 @@ dev-python/cached-property  ~amd64
 dev-python/websocket-client ~amd64
 dev-python/docker-py        ~amd64
 dev-python/colorama         ~amd64
+dev-python/texttable        ~amd64
 
 # Needed by `media-plugins/gimp-lensfun`
 media-libs/lensfun ~amd64
