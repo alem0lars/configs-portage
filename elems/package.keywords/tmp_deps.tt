@@ -56,5 +56,10 @@ dev-libs/libevent **
 # Needed by `app-text/pandoc`
 app-text/cmark ~amd64
 
+# Needed by dev-util/ctags
+dev-libs/libxml2 ~amd64
+
+# Needed by www-client/chromium
+dev-libs/libxslt ~amd64
 
 # vim: set filetype=eruby.gentoo-package-keywords :
