@@ -4,6 +4,8 @@ portage:
     - '-bindist'
     # Encryption
     - cryptsetup
+    # Configs
+    - savedconfig
     # System
     - dbus
     - policykit
