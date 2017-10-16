@@ -39,15 +39,17 @@ def native_flags_for(lang, banned_keywords)
 end
 
 define_locals do
-  variable :"cpu.max_jobs", type: :int, as: :cpu_max_jobs
-  variable :"cpu.max_load", type: :int, as: :cpu_max_load
+  variable "cpu.max_jobs", type: :int, as: :cpu_max_jobs
+  variable "cpu.max_load", type: :int, as: :cpu_max_load
 
-  variable :"portage.make.cflags", as: :custom_cflags
-  variable :"portage.make.cxxflags", as: :custom_cxxflags
-  variable :"portage.input_devices", as: :input_devices
-  variable :"portage.video_cards", as: :video_cards
-  variable :"portage.use_flags", as: :use_flags
-  variable :"portage.license", as: :license
+  variable "portage.make.cflags", as: :custom_cflags
+  variable "portage.make.cxxflags", as: :custom_cxxflags
+  variable "portage.input_devices", as: :input_devices
+  variable "portage.video_cards", as: :video_cards
+  variable "portage.use_flags", as: :use_flags
+  variable "portage.license", as: :license
+
+  variable "portage.l10n", as: :l10n, default: %i(en)
 
   computed(:cflags_banned_keyword) { %w(-fstack-protector-strong) }
 
@@ -72,7 +74,9 @@ end -%>
 
 # ───────────────────────────────────────────────────────── Host informations ─┐
 CHOST="x86_64-pc-linux-gnu"
-LINGUAS="en_US"
+# ───────────────────────────────────────────────────────────────Localization ─┤
+LINGUAS="<%= local!(:l10n).join(" ") %>"
+L10N="<%= local!(:l10n).join(" ") %>"
 # ─────────────────────────────────────────────────────────────────── Devices ─┤
 <% if has_feature? :multilib %>
 ABI_X86="64"

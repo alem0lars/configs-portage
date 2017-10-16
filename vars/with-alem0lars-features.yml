@@ -1,3 +1,8 @@
+portage:
+  l10n: 
+    - en
+    - it
+
 features:
   - local-repo
   - apo-repo
