@@ -221,12 +221,12 @@ USE="${USE} vim-syntax"
 # <% if has_feature? :mutt %>
 # USE="${USE} mbox imap nntp"
 # <% end %>
-# ──────────────────────────────────────────────────────────────── Libreoffice ─┤
+# ─────────────────────────────────────────────────────────────── Libreoffice ─┤
 LIBREOFFICE_EXTENSIONS="${LIBREOFFICE_EXTENSIONS} nlpsolver"
 LIBREOFFICE_EXTENSIONS="${LIBREOFFICE_EXTENSIONS} scripting-beanshell"
 LIBREOFFICE_EXTENSIONS="${LIBREOFFICE_EXTENSIONS} scripting-javascript"
 LIBREOFFICE_EXTENSIONS="${LIBREOFFICE_EXTENSIONS} wiki-publisher"
-# ──────────────────────────────────────────────────────────────────────────────┘
+# ─────────────────────────────────────────────────────────────────────────────┘
 
 
 # vim: set filetype=eruby.gentoo-make-conf :
