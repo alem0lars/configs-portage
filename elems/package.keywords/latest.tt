@@ -27,7 +27,8 @@ dev-python/path-and-address ~amd64
 net-libs/libhtp ~amd64
 
 # Needed by `net-libs/nodejs`
-dev-libs/libuv ~amd64
+dev-libs/libuv       ~amd64
+net-libs/http-parser ~amd64
 
 # Needed by `dev-lang/rust`
 sys-libs/libomp          ~amd64
