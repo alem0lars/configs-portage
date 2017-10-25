@@ -133,6 +133,9 @@ sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
 
+# Needed by `net-wireless/gnuradio`
+dev-libs/boost ~amd64
+
 # Needed by `dev-libs/capstone`
 dev-python/capstone-python ~amd64
 

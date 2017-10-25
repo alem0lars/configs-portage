@@ -16,6 +16,9 @@ net-im/skype            ~amd64
 net-im/slack-bin        ~amd64
 net-libs/nodejs         ~amd64
 
+# Needed by `sci-mathematics/rstudio`
+dev-util/boost-build-1.65.0 ~amd64
+
 # Needed by `dev-lang/cargo`
 sys-libs/compiler-rt            ~amd64
 sys-libs/compiler-rt-sanitizers ~amd64
