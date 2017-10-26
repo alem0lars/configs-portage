@@ -1,5 +1,8 @@
 portage:
-  l10n: 
+  make:
+    cflags: "-ggdb"
+    cxxflags: "-ggdb"
+  l10n:
     - en
     - it
 
