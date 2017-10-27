@@ -105,7 +105,6 @@ net-analyzer/tsung                   ~amd64
 net-analyzer/bro                     ~amd64
 net-im/telegram-desktop-bin          ~amd64
 net-misc/icaclient                   ~amd64
-net-misc/teamviewer                  ~amd64
 net-misc/httpie                      ~amd64
 net-misc/megatools                   ~amd64
 net-print/epson-inkjet-printer-escpr ~amd64
@@ -135,6 +134,7 @@ sci-CRAN/dplyr   ~amd64
 
 # Needed by `net-wireless/gnuradio`
 dev-libs/boost ~amd64
+net-libs/nghttp2 ~amd64
 
 # Needed by `dev-libs/capstone`
 dev-python/capstone-python ~amd64
