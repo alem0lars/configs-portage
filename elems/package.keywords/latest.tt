@@ -12,7 +12,6 @@ dev-lang/rust           ~amd64
 virtual/rust            ~amd64
 dev-util/cargo          ~amd64
 net-analyzer/suricata   ~amd64
-net-im/skype            ~amd64
 net-im/slack-bin        ~amd64
 net-libs/nodejs         ~amd64
 
