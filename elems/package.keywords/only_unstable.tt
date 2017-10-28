@@ -42,7 +42,6 @@
 # alem0lars packages has only unstable packages by policy
 */*::apo
 
-app-admin/eclean-kernel      ~amd64
 app-admin/lnav               ~amd64
 app-admin/salt               ~amd64
 app-backup/attic             ~amd64
@@ -60,7 +59,6 @@ app-misc/geeknote            ~amd64
 app-misc/buku                ~amd64
 app-misc/nitrokey-app        ~amd64
 app-misc/tmsu                ~amd64
-app-misc/tmuxinator          ~amd64
 app-misc/sman                ~amd64
 app-misc/ttyrec              ~amd64
 app-shells/fasd              ~amd64
@@ -263,9 +261,6 @@ dev-ruby/method_source ~amd64
 
 # Needed by `dev-db/sqlmap`.
 dev-python/python-ntlm
-
-# Needed by `app-admin/eclean-kernel`.
-dev-python/pymountboot ~amd64
 
 # Needed by `app-emulation/vagrant`.
 dev-ruby/i18n                 ~amd64
