@@ -37,6 +37,10 @@ elems:
     dst:  /etc/portage/<1>
     only: f?portage
 
+  - src:  ^(repos\.conf/poly-c\.conf)$
+    dst:  /etc/portage/<1>
+    only: f?portage
+
   - src:  ^(repos\.conf/local\.conf)$
     dst:  /etc/portage/<1>
     only: f?portage && f?local-repo
