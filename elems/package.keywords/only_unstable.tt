@@ -57,7 +57,7 @@ app-forensics/scalpel        ~amd64
 app-i18n/translate-shell     ~amd64
 app-misc/geeknote            ~amd64
 app-misc/buku                ~amd64
-app-misc/nitrokey-app        ~amd64
+app-crypt/nitrokey-app       ~amd64
 app-misc/tmsu                ~amd64
 app-misc/sman                ~amd64
 app-misc/ttyrec              ~amd64
@@ -129,6 +129,11 @@ x11-themes/arc-theme      ~amd64
 sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
+
+# Needed by `app-crypt/nitrokey-app`
+dev-cpp/catch        ~amd64
+dev-libs/libnitrokey ~amd64
+dev-cpp/cppcodec     ~amd64
 
 # Needed by `net-wireless/gnuradio`
 dev-libs/boost ~amd64

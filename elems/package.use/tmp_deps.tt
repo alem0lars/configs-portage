@@ -110,9 +110,6 @@ x11-libs/libXau            abi_x86_32
 dev-libs/libpthread-stubs  abi_x86_32
 x11-proto/xcb-proto        abi_x86_32
 
-# Needed by `app-misc/nitrokey-app`
-dev-libs/libpcre* pcre16
-
 # Needed by `dev-lang/rust`
 sys-devel/llvm multitarget
 
