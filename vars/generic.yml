@@ -11,6 +11,8 @@ portage:
     - policykit
     - libnotify
     - acpi
+    # Protocols
+    - usb
     # Network
     - avahi
     - upnp

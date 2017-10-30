@@ -8,23 +8,24 @@
 */* gles2
 */* usbredir
 
-media-libs/openal utils
-net-dns/dnsmasq lua script dhcp dhcp-tools dnssec
-media-libs/libvpx postproc
+app-crypt/gnupg tools
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
 app-emulation/virtualbox extensions
 app-emulation/wine staging
 app-office/libreoffice google collada gltf odk vlc
-app-text/texlive-core xetex
 app-text/texlive xetex extra context detex dvi2tty epspdf games graphics humanities luatex metapost music omega pdfannotextractor pstricks publishers science tex4ht texi2html xindy
+app-text/texlive-core xetex
 app-text/zathura-meta cb
 dev-db/sqlmap ntlm
 mail-client/mutt -berkdb -gdbm lmdb -qdbm -tokyocabinet
 mail-client/mutt sidebar notmuch
 media-libs/libpng apng
+media-libs/libvpx postproc
+media-libs/openal utils
 media-sound/beets chroma convert discogs lastgenre opus replaygain
 net-analyzer/nmap ncat ndiff nping nmap-update
+net-dns/dnsmasq lua script dhcp dhcp-tools dnssec
 net-misc/openconnect gssapi lz4 stoken
 net-misc/openvpn socks
 net-misc/tigervnc server
@@ -35,11 +36,10 @@ sys-devel/autogen libopts
 sys-devel/distcc crossdev
 sys-libs/zlib minizip
 sys-process/htop oom
+www-client/uzbl experimental
 x11-base/xorg-server xvfb
 x11-misc/redshift geoclue
 x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth unicode3
-# x11-drivers/xf86-video-intel uxa
-www-client/uzbl experimental
 
 # To respect: `at-most-one-of ( qt4 qt5 )`
 net-wireless/wpa_supplicant -qt4
