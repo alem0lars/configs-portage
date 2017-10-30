@@ -89,6 +89,7 @@ dev-vcs/git-crypt                   ~amd64
 dev-vcs/git-imerge                  ~amd64
 dev-vcs/gitinspector                ~amd64
 dev-vcs/hub                         ~amd64
+dev-embedded/dfu-programmer         ~amd64
 
 media-fonts/hack           ~amd64
 media-gfx/plantuml         ~amd64
