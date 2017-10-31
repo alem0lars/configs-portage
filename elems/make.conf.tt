@@ -117,7 +117,6 @@ ACCEPT_LICENSE="<%= local! :license %>"
 # ──────────────────────────────────────────────────────────────────── Emerge ─┤
 FEATURES="parallel-fetch metadata-transfer ${FEATURES}"
 FEATURES="installsources ${FEATURES}"
-FEATURES="splitdebug compressdebug -nostrip ${FEATURES}"
 FEATURES="-userfetch -userpriv ${FEATURES}"
 <% if has_feature? :distcc %>
 FEATURES="distcc distcc-pump ${FEATURES}"
