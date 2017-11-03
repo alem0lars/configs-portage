@@ -14,7 +14,7 @@ dev-util/cargo          ~amd64
 net-analyzer/suricata   ~amd64
 net-im/slack-bin        ~amd64
 net-libs/nodejs         ~amd64
-net-im/skype-for-linux  ~amd64
+net-im/skypeforlinux    ~amd64
 
 # Needed by `sci-mathematics/rstudio`
 dev-util/boost-build ~amd64
