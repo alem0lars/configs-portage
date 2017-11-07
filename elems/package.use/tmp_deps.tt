@@ -56,6 +56,8 @@ dev-qt/qtsql qt3support
 virtual/libmysqlclient abi_x86_32
 
 # Needed by `net-wireless/gnuradio`
+dev-python/PyQt4 compat
+dev-qt/qtcore abi_x86_32
 dev-qt/qt3support abi_x86_32
 
 # Needed by `app-emulation/virt-manager`
@@ -115,9 +117,6 @@ sys-devel/llvm multitarget
 
 # Needed by `dev-util/android-sdk-update-manager`
 sys-libs/zlib abi_x86_32
-
-# Needed by `net-wireless/gnuradio`
-dev-python/PyQt4 compat
 
 # Needed by `net-misc/tigervnc`
 x11-libs/libXvMC abi_x86_32
