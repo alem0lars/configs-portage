@@ -99,6 +99,7 @@ media-plugins/gimp-lensfun ~amd64
 media-sound/beets          ~amd64
 media-sound/cmusfm         ~amd64
 media-sound/playerctl      ~amd64
+media-video/handbrake      ~amd64
 
 net-analyzer/tsung                   ~amd64
 net-analyzer/bro                     ~amd64
