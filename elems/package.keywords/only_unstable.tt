@@ -132,6 +132,9 @@ sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
 
+# Needed by `media-video/handbrake`
+media-libs/libbluray ~amd64
+
 # Needed by `app-crypt/nitrokey-app`
 dev-cpp/catch        ~amd64
 dev-libs/libnitrokey ~amd64
