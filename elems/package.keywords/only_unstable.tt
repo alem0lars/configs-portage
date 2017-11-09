@@ -133,6 +133,9 @@ sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
 
+# Needed by `dev-util/smem`
+dev-perl/Linux-Smaps ~amd64
+
 # Needed by `media-video/handbrake`
 media-libs/libbluray ~amd64
 
