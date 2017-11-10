@@ -46,6 +46,9 @@ dev-vcs/subversion -ruby
 app-shells/fzf -bash-completion
 <% end %>
 
+# Doesn't support enabled PYTHON_TARGET (not yet python 3.5)
+www-client/qutebrowser python_targets_python3_5
+
 # Doesn't support python 3 yet.
 app-text/asciidoc python_single_target_python2_7
 
