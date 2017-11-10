@@ -127,6 +127,7 @@ www-client/qutebrowser        ~amd64
 
 x11-apps/copyq            ~amd64
 x11-misc/taffybar         ~amd64
+x11-misc/py3status        ~amd64
 x11-themes/arc-icon-theme ~amd64
 x11-themes/arc-theme      ~amd64
 
