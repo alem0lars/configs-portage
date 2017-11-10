@@ -84,7 +84,6 @@ dev-util/dex2jar                    ~amd64
 dev-util/heroku-client              ~amd64
 dev-util/protege                    ~amd64
 dev-util/racer                      **
-dev-util/smem                       ~amd64
 dev-util/unicorn                    ~amd64
 dev-vcs/git-crypt                   ~amd64
 dev-vcs/git-imerge                  ~amd64
@@ -108,6 +107,7 @@ net-im/telegram-desktop-bin          ~amd64
 net-misc/icaclient                   ~amd64
 net-misc/httpie                      ~amd64
 net-misc/megatools                   ~amd64
+net-misc/nxplayer                    ~amd64
 net-print/epson-inkjet-printer-escpr ~amd64
 net-vpn/logmein-hamachi              ~amd64
 net-wireless/gnuradio                ~amd64
@@ -132,9 +132,6 @@ x11-themes/arc-theme      ~amd64
 sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
-
-# Needed by `dev-util/smem`
-dev-perl/Linux-Smaps ~amd64
 
 # Needed by `media-video/handbrake`
 media-libs/libbluray ~amd64
