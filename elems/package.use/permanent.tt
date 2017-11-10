@@ -9,6 +9,9 @@
 */* usbredir
 */* x265 fdk
 
+dev-python/PyQt5 declarative printsupport webengine webchannel widgets network
+dev-qt/*         declarative printsupport webengine webchannel widgets qml
+
 app-crypt/gnupg tools
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
