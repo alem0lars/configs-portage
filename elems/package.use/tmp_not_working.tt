@@ -50,6 +50,9 @@ app-shells/fzf -bash-completion
 www-client/qutebrowser python_targets_python3_5
 # Needed by `www-client/qutebrowser`
 dev-python/setuptools python_targets_python3_5
+dev-python/PyQt5 python_targets_python3_5
+dev-python/sip python_targets_python3_5
+dev-python/dbus-python python_targets_python3_5
 
 # Doesn't support python 3 yet.
 app-text/asciidoc python_single_target_python2_7
