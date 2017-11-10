@@ -123,6 +123,7 @@ sys-kernel/linux-firmware ~amd64
 www-apps/etherpad-lite        ~amd64
 www-plugins/google-talkplugin ~amd64
 www-servers/pshs              ~amd64
+www-client/qutebrowser        ~amd64
 
 x11-apps/copyq            ~amd64
 x11-misc/taffybar         ~amd64
