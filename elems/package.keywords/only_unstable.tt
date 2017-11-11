@@ -49,8 +49,6 @@ app-crypt/hashcat            ~amd64
 app-editors/neovim           ~amd64
 app-emacs/ghc-mod            ~amd64
 app-emulation/vagrant        ~amd64
-app-emulation/wine           ~amd64
-app-emulation/winetricks     ~amd64
 app-forensics/afl            ~amd64
 app-forensics/radamsa        ~amd64
 app-forensics/scalpel        ~amd64
@@ -134,6 +132,9 @@ x11-themes/arc-theme      ~amd64
 sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
+
+# Needed by `www-client-qutebrowser``
+dev-python/pypeg2 ~amd64
 
 # Needed by `media-video/handbrake`
 media-libs/libbluray ~amd64

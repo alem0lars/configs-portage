@@ -16,7 +16,6 @@ app-crypt/gnupg tools
 app-doc/doxygen doxysearch
 app-emulation/docker experimental overlay aufs
 app-emulation/virtualbox extensions
-app-emulation/wine staging
 app-office/libreoffice google collada gltf odk vlc
 app-text/texlive xetex extra context detex dvi2tty epspdf games graphics humanities luatex metapost music omega pdfannotextractor pstricks publishers science tex4ht texi2html xindy
 app-text/texlive-core xetex
