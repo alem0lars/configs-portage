@@ -30,7 +30,7 @@ portage:
     # File formats
     # -> Graphics
     - raw
-    # - xpm
+    - xpm
     - jbig
     - jpeg
     - jpeg2k
@@ -46,6 +46,8 @@ portage:
     - ogg
     - mp3
     - vorbis
+    # -> Video
+    - webp
     # -> Docs
     - postscript
     - djvu
@@ -66,6 +68,7 @@ portage:
     # Misc
     - kerberos
     - ssl
+    - geolocation
     # Libs support
     - lapack
     - plotutils

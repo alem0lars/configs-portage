@@ -9,8 +9,8 @@
 */* usbredir
 */* x265 fdk
 
-dev-python/PyQt5 declarative printsupport webengine webchannel widgets network
-dev-qt/*         declarative printsupport webengine webchannel widgets qml
+dev-python/PyQt5 declarative printsupport webengine webchannel widgets network multimedia
+dev-qt/*         declarative printsupport webengine webchannel widgets qml multimedia
 
 app-crypt/gnupg tools
 app-doc/doxygen doxysearch
@@ -43,6 +43,7 @@ www-client/uzbl experimental
 x11-base/xorg-server xvfb
 x11-misc/redshift geoclue
 x11-terms/rxvt-unicode -vanilla 256-color buffer-on-clear fading-colors wcwidth unicode3
+x11-drivers/nvidia-drivers uvm
 
 # To respect: `at-most-one-of ( qt4 qt5 )`
 net-wireless/wpa_supplicant -qt4
