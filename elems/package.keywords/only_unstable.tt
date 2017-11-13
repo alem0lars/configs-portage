@@ -62,6 +62,8 @@ app-misc/ttyrec              ~amd64
 app-shells/fasd              ~amd64
 app-emulation/docker-compose ~amd64
 app-emulation/packer         ~amd64
+app-emulation/wine-mono      ~amd64
+app-emulation/wine-staging   ~amd64
 app-text/sigil               ~amd64
 
 dev-db/sqlmap                       ~amd64
