@@ -4,24 +4,21 @@ dev-util/webstorm **
 net-misc/megasync **
 sys-devel/voltron **
 
-sci-mathematics/rstudio ~amd64
 app-text/grip           ~amd64
 dev-lang/python         ~amd64
 dev-lang/ruby           ~amd64
 dev-lang/rust           ~amd64
-virtual/rust            ~amd64
+dev-ruby/*              ~amd64
 dev-util/cargo          ~amd64
 net-analyzer/suricata   ~amd64
+net-im/skypeforlinux    ~amd64
 net-im/slack-bin        ~amd64
 net-libs/nodejs         ~amd64
-net-im/skypeforlinux    ~amd64
+sci-mathematics/rstudio ~amd64
+virtual/rust            ~amd64
 
 # Needed by `sci-mathematics/rstudio`
 dev-util/boost-build ~amd64
-
-# Needed by `dev-lang/cargo`
-sys-libs/compiler-rt            ~amd64
-sys-libs/compiler-rt-sanitizers ~amd64
 
 # Needed by `app-text/grip`
 dev-python/path-and-address ~amd64
@@ -40,5 +37,4 @@ app-eselect/eselect-rust ~amd64
 
 # Needed by `dev-lang/ruby`
 app-eselect/eselect-ruby ~amd64
-dev-ruby/*               ~amd64
 virtual/ruby*            ~amd64
