@@ -15,6 +15,7 @@ net-im/skypeforlinux    ~amd64
 net-im/slack-bin        ~amd64
 net-libs/nodejs         ~amd64
 sci-mathematics/rstudio ~amd64
+www-client/firefox      ~amd64
 virtual/rust            ~amd64
 
 # Needed by `sci-mathematics/rstudio`
