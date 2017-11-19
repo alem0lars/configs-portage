@@ -35,6 +35,15 @@
 #                                                                              │
 # ─────────────────────────────────────────────────────────────────────────────┘
 
+# Needed by `mail-client/thunderbird`
+sys-devel/llvm abi_x86_32
+
+# Needed by `app-office/libreoffice`
+dev-libs/xmlsec nss
+
+# Needed by `app-emulation/wine-staging`
+media-libs/mesa abi_x86_32
+
 # Needed by `net-im/telegram-desktop`
 virtual/ffmpeg opus
 media-video/ffmpeg opus
@@ -54,6 +63,7 @@ virtual/libmysqlclient abi_x86_32
 # Needed by `net-wireless/gnuradio`
 dev-python/PyQt4 compat
 dev-qt/qtcore abi_x86_32
+app-crypt/mit-krb5 abi_x86_32
 
 # Needed by `app-emulation/virt-manager`
 media-libs/libepoxy abi_x86_32
@@ -83,7 +93,7 @@ x11-libs/libX11  abi_x86_32
 # required by media-plugins/alsa-plugins-1.1.1::gentoo[pulseaudio]
 x11-proto/inputproto abi_x86_32
 
-# required by net-misc/icaclient-13.4.0.10109380-r1::gentoo
+# Needed by `net-misc/icaclient`
 x11-libs/cairo         abi_x86_32
 x11-libs/pango         abi_x86_32
 media-gfx/graphite2    abi_x86_32
@@ -95,7 +105,7 @@ x11-proto/xproto       abi_x86_32
 dev-libs/lzo           abi_x86_32
 media-libs/harfbuzz    abi_x86_32
 
-# required by x11-libs/libva-intel-driver-1.7.3::gentoo
+# Needed by `x11-libs/libva-intel-driver`
 x11-proto/kbproto          abi_x86_32
 x11-proto/xf86bigfontproto abi_x86_32
 x11-libs/libXdmcp          abi_x86_32

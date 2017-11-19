@@ -35,45 +35,41 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-# gentoo-haskell overlay has only unstable packages by policy:
+# `gentoo-haskell` overlay has only unstable packages by policy:
 # https://github.com/gentoo-haskell/gentoo-haskell#quickest-start
 */*::haskell ~amd64
 
-# alem0lars packages has only unstable packages by policy
+# `apo` overlay has only unstable packages by policy
 */*::apo
+
+# When firefox >= 57 (non bin) becomes stable, unmerge firefox-bin and install
+# firefox stable
+www-client/firefox-bin ~amd64
 
 app-admin/lnav               ~amd64
 app-admin/salt               ~amd64
 app-backup/attic             ~amd64
 app-crypt/hashcat            ~amd64
+app-crypt/nitrokey-app       ~amd64
 app-editors/neovim           ~amd64
 app-emacs/ghc-mod            ~amd64
+app-emulation/docker-compose ~amd64
 app-emulation/vagrant        ~amd64
+app-emulation/wine-mono      ~amd64
+app-emulation/wine-staging   ~amd64
 app-forensics/afl            ~amd64
 app-forensics/radamsa        ~amd64
 app-forensics/scalpel        ~amd64
 app-i18n/translate-shell     ~amd64
-app-misc/geeknote            ~amd64
-app-misc/buku                ~amd64
-app-crypt/nitrokey-app       ~amd64
-app-misc/tmsu                ~amd64
-app-misc/sman                ~amd64
 app-misc/ttyrec              ~amd64
 app-shells/fasd              ~amd64
-app-emulation/docker-compose ~amd64
-app-emulation/packer         ~amd64
-app-emulation/wine-mono      ~amd64
-app-emulation/wine-staging   ~amd64
 app-text/sigil               ~amd64
 
 dev-db/sqlmap                       ~amd64
-dev-lang/julia                      ~amd64
 dev-libs/capstone                   ~amd64
 dev-libs/unicorn-bindings           ~amd64
 dev-libs/log4cxx                    ~amd64
 dev-python/mwclient                 ~amd64
-dev-python/sympy                    ~amd64
-dev-python/twisted                  ~amd64
 dev-ruby/awesome_print              ~amd64
 dev-ruby/pry                        ~amd64
 dev-ruby/thor                       ~amd64
@@ -115,15 +111,9 @@ net-analyzer/metasploit              ~amd64
 
 sci-electronics/quartus-prime-lite ~amd64
 
-sys-apps/yarn ~amd64
-
-sys-kernel/dracut         ~amd64
-sys-kernel/linux-firmware ~amd64
-
 www-apps/etherpad-lite        ~amd64
 www-plugins/google-talkplugin ~amd64
 www-servers/pshs              ~amd64
-www-client/qutebrowser        ~amd64
 
 x11-apps/copyq            ~amd64
 x11-misc/taffybar         ~amd64
@@ -134,9 +124,6 @@ x11-themes/arc-theme      ~amd64
 sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
-
-# Needed by `www-client-qutebrowser``
-dev-python/pypeg2 ~amd64
 
 # Needed by `media-video/handbrake`
 media-libs/libbluray ~amd64
@@ -172,10 +159,6 @@ dev-haskell/gtk-traymanager ~amd64
 
 # Needed by `net-misc/httpie`.
 dev-python/pygments ~amd64
-
-# Needed by `app-misc/geeknote`
-dev-util/apache-thrift         ~amd64
-dev-python/evernote-sdk-python ~amd64
 
 # Needed by `sci-CRAN/dplyr`
 sci-CRAN/R6         ~amd64
@@ -220,15 +203,6 @@ dev-python/texttable        ~amd64
 # Needed by `media-plugins/gimp-lensfun`
 media-libs/lensfun ~amd64
 
-# Needed by `dev-python/twisted`
-dev-python/pyopenssl            ~amd64
-sys-libs/compiler-rt-sanitizers ~amd64
-dev-python/incremental          ~amd64
-dev-python/constantly           ~amd64
-dev-python/m2r                  ~amd64
-dev-python/automat              ~amd64
-dev-python/hyperlink            ~amd64
-
 # Needed by `media-sound/beets`
 dev-python/jellyfish  ~amd64
 dev-python/munkres    ~amd64
@@ -237,9 +211,6 @@ dev-python/audioread  ~amd64
 
 # Needed by `net-analyzer/bro`.
 net-analyzer/ipsumdump ~amd64
-
-# Needed by `dev-python/sympy`.
-dev-python/mpmath ~amd64
 
 # Needed by `dev-util/racer`.
 dev-util/rust-sources ~amd64
@@ -259,18 +230,6 @@ dev-python/neovim-python-client ~amd64
 dev-libs/unibilium              ~amd64
 dev-ruby/msgpack                ~amd64
 
-# Needed by `app-emacs/ghc-mod`.
-dev-haskell/cabal-helper  ~amd64
-dev-haskell/monad-journal ~amd64
-dev-haskell/fclabels      ~amd64
-dev-haskell/ghc-syb-utils ~amd64
-dev-haskell/djinn-ghc     ~amd64
-dev-haskell/convertible   ~amd64
-dev-haskell/djinn-lib     ~amd64
-dev-haskell/either        ~amd64
-dev-haskell/pipes         ~amd64
-dev-haskell/monadrandom   ~amd64
-
 # Needed by `dev-ruby/pry`.
 dev-ruby/slop          ~amd64
 dev-ruby/method_source ~amd64
@@ -289,12 +248,6 @@ dev-ruby/rest-client          ~amd64
 dev-ruby/net-ssh              ~amd64
 dev-ruby/listen               ~amd64
 dev-ruby/nokogiri             ~amd64
-
-# Needed by `dev-lang/julia`.
-dev-libs/double-conversion ~amd64
-dev-libs/openspecfun       ~amd64
-sci-libs/openlibm          ~amd64
-virtual/blas               ~amd64
 
 
 # vim: set filetype=eruby.gentoo-package-keywords :

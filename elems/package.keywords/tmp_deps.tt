@@ -37,10 +37,6 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
-# Needed by `dev-python/twisted`
-dev-python/cryptography ~amd64
-dev-python/asn1crypto ~amd64
-
 # Needed by `dev-python/tmuxp`.
 dev-python/click ~amd64
 
@@ -61,5 +57,6 @@ dev-libs/libxml2 ~amd64
 
 # Needed by www-client/chromium
 dev-libs/libxslt ~amd64
+
 
 # vim: set filetype=eruby.gentoo-package-keywords :
