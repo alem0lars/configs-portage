@@ -125,6 +125,9 @@ sci-CRAN/readr   ~amd64
 sci-CRAN/ggplot2 ~amd64
 sci-CRAN/dplyr   ~amd64
 
+# Needed by `app-emulation/wine-staging`
+media-libs/lcms abi_x86_32
+
 # Needed by `media-video/handbrake`
 media-libs/libbluray ~amd64
 
