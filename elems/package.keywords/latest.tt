@@ -17,34 +17,5 @@ sci-mathematics/rstudio   ~amd64
 sys-kernel/linux-firmware ~amd64
 virtual/rust              ~amd64
 
-#www-client/firefox      ~amd64
-# Needed by `www-client/firefox`
-#=sys-devel/llvm-common-5.0.0 ~amd64
-#=sys-libs/compiler-rt-5.0.0 ~amd64
-#=sys-devel/clang-runtime-5.0.0 ~amd64
-#=sys-devel/clang-5.0.0 ~amd64
-#=sys-devel/llvm-5.0.0 ~amd64
-#=dev-libs/nss-3.34 ~amd64
-#=dev-libs/nspr-4.17 ~amd64
 
-# Needed by `sci-mathematics/rstudio`
-dev-util/boost-build ~amd64
-
-# Needed by `app-text/grip`
-dev-python/path-and-address ~amd64
-
-# Needed by `net-analyzer/suricata`
-net-libs/libhtp ~amd64
-
-# Needed by `net-libs/nodejs`
-dev-libs/libuv       ~amd64
-net-libs/http-parser ~amd64
-
-# Needed by `dev-lang/rust`
-sys-libs/libomp          ~amd64
-dev-util/cmake           ~amd64
-app-eselect/eselect-rust ~amd64
-
-# Needed by `dev-lang/ruby`
-app-eselect/eselect-ruby ~amd64
-virtual/ruby*            ~amd64
+# vim: set filetype=eruby.gentoo-package-keywords :
