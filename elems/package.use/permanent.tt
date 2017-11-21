@@ -8,6 +8,7 @@
 */* gles2
 */* usbredir
 */* x265 fdk
+*/* opencl osmesa
 
 dev-python/PyQt5 declarative printsupport webengine webchannel widgets network multimedia
 dev-qt/*         declarative printsupport webengine webchannel widgets qml multimedia
@@ -23,6 +24,7 @@ app-text/zathura-meta cb
 dev-db/sqlmap ntlm
 mail-client/mutt -berkdb -gdbm lmdb -qdbm -tokyocabinet
 mail-client/mutt sidebar notmuch
+media-libs/mesa vulkan xa
 media-libs/libpng apng
 media-libs/libvpx postproc
 media-libs/openal utils
