@@ -135,5 +135,17 @@ x11-libs/libXvMC abi_x86_32
 dev-libs/openssl -kerberos
 media-libs/mesa -vaapi
 
+# Needed by `media-sound/mumble`
+dev-qt/qtscript abi_x86_32
+
+# Needed by `media-gfx/graphviz`
+dev-qt/qtcore qt3support
+
+# Needed by `dev-qt/qtscript`
+x11-libs/libXv abi_x86_32
+
+# Needed by `media-sound/beets`
+x11-proto/videoproto abi_x86_32
+
 
 # vim: set filetype=eruby.gentoo-package-use :

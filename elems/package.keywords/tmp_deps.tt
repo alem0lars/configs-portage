@@ -201,5 +201,9 @@ dev-libs/libxml2 ~amd64
 # Needed by www-client/chromium
 dev-libs/libxslt ~amd64
 
+# Needed by `dev-haskell/stack`
+dev-haskell/retry ~amd64
+dev-haskell/file-embed ~amd64
+
 
 # vim: set filetype=eruby.gentoo-package-keywords :
