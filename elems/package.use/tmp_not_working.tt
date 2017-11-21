@@ -46,27 +46,6 @@ dev-vcs/subversion -ruby
 app-shells/fzf -bash-completion
 <% end %>
 
-# Doesn't support enabled PYTHON_TARGET (not yet python 3.5)
-www-client/qutebrowser python_targets_python3_5
-# Needed by `www-client/qutebrowser`
-dev-python/setuptools python_targets_python3_5
-dev-python/PyQt5 sql python_targets_python3_5
-dev-python/sip python_targets_python3_5
-dev-python/dbus-python python_targets_python3_5
-dev-python/pyyaml python_targets_python3_5
-dev-python/appdirs python_targets_python3_5
-dev-python/markupsafe python_targets_python3_5
-dev-python/zope-interface python_targets_python3_5
-dev-python/pypeg2 python_targets_python3_5
-dev-python/pyparsing python_targets_python3_5
-dev-python/six python_targets_python3_5
-dev-python/jinja python_targets_python3_5
-dev-python/pygments python_targets_python3_5
-dev-python/lxml python_targets_python3_5
-dev-python/certifi python_targets_python3_5
-dev-python/attrs python_targets_python3_5
-dev-python/packaging python_targets_python3_5
-
 # Doesn't support python 3 yet.
 app-text/asciidoc python_single_target_python2_7
 
@@ -88,21 +67,6 @@ net-proxy/dante -upnp
 <% if has_feature? :lua %>
 net-analyzer/suricata luajit -lua
 <% end %>
-
-# Needed by vagrant
-dev-ruby/json         ruby_targets_ruby24
-dev-ruby/xmlrpc       ruby_targets_ruby24
-dev-ruby/minitest     ruby_targets_ruby24
-virtual/rubygems      ruby_targets_ruby24
-dev-ruby/rdoc         ruby_targets_ruby24
-dev-ruby/racc         ruby_targets_ruby24
-dev-ruby/test-unit    ruby_targets_ruby24
-dev-ruby/net-telnet   ruby_targets_ruby24
-dev-ruby/kpeg         ruby_targets_ruby24
-dev-ruby/rubygems     ruby_targets_ruby24
-dev-ruby/did_you_mean ruby_targets_ruby24
-dev-ruby/power_assert ruby_targets_ruby24
-dev-ruby/rake         ruby_targets_ruby24
 
 
 # vim: set filetype=eruby.gentoo-package-use :
