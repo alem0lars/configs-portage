@@ -43,15 +43,17 @@ dev-ruby/rake ruby_targets_ruby24
 
 # Needed by `app-emulation/wine-staging`
 media-libs/lcms abi_x86_32
+virtual/libelf abi_x86_32
+sys-devel/clang abi_x86_32
+dev-libs/elfutils abi_x86_32
+virtual/opencl abi_x86_32
+media-libs/mesa abi_x86_32
 
 # Needed by `mail-client/thunderbird`
 sys-devel/llvm abi_x86_32
 
 # Needed by `app-office/libreoffice`
 dev-libs/xmlsec nss
-
-# Needed by `app-emulation/wine-staging`
-media-libs/mesa abi_x86_32
 
 # Needed by `net-im/telegram-desktop`
 virtual/ffmpeg opus
@@ -137,9 +139,6 @@ media-libs/mesa -vaapi
 
 # Needed by `media-sound/mumble`
 dev-qt/qtscript abi_x86_32
-
-# Needed by `media-gfx/graphviz`
-dev-qt/qtcore qt3support
 
 # Needed by `dev-qt/qtscript`
 x11-libs/libXv abi_x86_32
