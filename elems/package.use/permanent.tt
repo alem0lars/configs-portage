@@ -1,11 +1,10 @@
 */* cairo
-*/* dot gpg kxb smi svc widevine smime egl jadetex pstricks
+*/* dot gpg kxb smi svc widevine smime jadetex pstricks
 */* pgo
-# */* dri3 xvmc
+*/* xvmc
 */* glamor
 */* gimp
 */* qt4 qt5 gtk gtk3 widgets gui
-*/* gles2
 */* usbredir
 */* x265 fdk
 */* opencl osmesa
