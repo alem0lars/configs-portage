@@ -46,7 +46,7 @@
 # firefox stable
 www-client/firefox-bin ~amd64
 
-app-editors/atom             ~amd64
+app-crypt/steghide           ~amd64
 app-admin/lnav               ~amd64
 app-admin/salt               ~amd64
 app-backup/attic             ~amd64
