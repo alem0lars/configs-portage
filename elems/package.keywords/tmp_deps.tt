@@ -205,5 +205,9 @@ dev-libs/libxslt ~amd64
 dev-haskell/retry ~amd64
 dev-haskell/file-embed ~amd64
 
+# Needed by `app-editors/atom`
+app-eselect/eselect-electron ~amd64
+dev-util/electron ~amd64
+
 
 # vim: set filetype=eruby.gentoo-package-keywords :

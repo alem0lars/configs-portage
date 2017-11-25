@@ -151,5 +151,8 @@ x11-libs/libXv abi_x86_32
 # Needed by `media-sound/beets`
 x11-proto/videoproto abi_x86_32
 
+# Needed by `app-editors/atom`
+dev-libs/libpcre2 pcre16
+
 
 # vim: set filetype=eruby.gentoo-package-use :
