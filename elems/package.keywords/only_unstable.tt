@@ -65,6 +65,7 @@ app-i18n/translate-shell     ~amd64
 app-misc/ttyrec              ~amd64
 app-shells/fasd              ~amd64
 app-text/sigil               ~amd64
+app-text/grip                ~amd64
 
 dev-db/sqlmap                       ~amd64
 dev-libs/capstone                   ~amd64

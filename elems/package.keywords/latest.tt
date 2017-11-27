@@ -3,7 +3,7 @@ dev-util/radare2  **
 dev-util/webstorm **
 net-misc/megasync **
 
-app-text/grip             ~amd64
+app-misc/xmind            ~amd64
 dev-lang/python           ~amd64
 dev-lang/ruby             ~amd64
 dev-lang/rust             ~amd64
