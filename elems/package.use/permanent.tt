@@ -54,8 +54,6 @@ media-libs/opencv -qt4
 # To respect: `( exactly-one-of ( gles2 opengl ) )`
 net-libs/webkit-gtk -gles2
 
-dev-util/unicorn unicorn_targets_x86
-
 <% if has_feature? :tmux %>
 app-shells/fzf tmux
 <% end %>
