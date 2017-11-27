@@ -101,6 +101,7 @@ media-video/handbrake      ~amd64
 net-analyzer/tsung                   ~amd64
 net-analyzer/bro                     ~amd64
 net-im/telegram-desktop-bin          ~amd64
+net-im/discord-bin                   ~amd64
 net-misc/icaclient                   ~amd64
 net-misc/httpie                      ~amd64
 net-misc/megatools                   ~amd64
