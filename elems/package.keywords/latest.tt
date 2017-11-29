@@ -9,6 +9,7 @@ dev-lang/ruby             ~amd64
 dev-lang/rust             ~amd64
 dev-ruby/*                ~amd64
 dev-util/cargo            ~amd64
+media-fonts/*             ~amd64
 net-analyzer/suricata     ~amd64
 net-im/skypeforlinux      ~amd64
 net-im/slack-bin          ~amd64
