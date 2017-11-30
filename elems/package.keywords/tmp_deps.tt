@@ -208,5 +208,11 @@ dev-haskell/file-embed ~amd64
 # Needed by `app-misc/binwalk`
 dev-python/pyliblzma ~amd64
 
+# Needed by `app-emulation/vmware-player`
+app-emulation/vmware-modules ~amd64
+dev-util/patchelf ~amd64
+app-emulation/vmware-tools ~amd64
+dev-libs/libgcrypt ~amd64
+
 
 # vim: set filetype=eruby.gentoo-package-keywords :
