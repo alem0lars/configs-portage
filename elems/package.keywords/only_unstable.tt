@@ -67,6 +67,7 @@ app-shells/fasd              ~amd64
 app-text/sigil               ~amd64
 app-text/grip                ~amd64
 app-emulation/vmware-player  ~amd64
+app-admin/lastpass-binary-component ~amd64
 
 dev-db/sqlmap                       ~amd64
 dev-libs/capstone                   ~amd64
