@@ -214,5 +214,8 @@ dev-util/patchelf ~amd64
 app-emulation/vmware-tools ~amd64
 dev-libs/libgcrypt ~amd64
 
+# Needed by `media-gfx/pngquant`
+media-gfx/libimagequant ~amd64
+
 
 # vim: set filetype=eruby.gentoo-package-keywords :

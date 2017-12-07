@@ -156,5 +156,10 @@ x11-proto/videoproto abi_x86_32
 # Needed by `net-dns/dnsmasq`
 dev-libs/gmp abi_x86_32
 
+# Needed by `net-wireless/gnuradio`
+x11-libs/libXcursor abi_x86_32
+# Needed by `net-misc/tigervnc`
+x11-libs/libdrm abi_x86_32
+
 
 # vim: set filetype=eruby.gentoo-package-use :
