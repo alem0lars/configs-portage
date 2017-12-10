@@ -17,6 +17,7 @@ net-libs/nodejs           ~amd64
 sci-mathematics/rstudio   ~amd64
 sys-kernel/linux-firmware ~amd64
 virtual/rust              ~amd64
+x11-misc/rofi             ~amd64
 
 
 # vim: set filetype=eruby.gentoo-package-keywords :
