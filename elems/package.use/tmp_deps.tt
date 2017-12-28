@@ -35,6 +35,23 @@
 #                                                                              │
 # ─────────────────────────────────────────────────────────────────────────────┘
 
+
+# Needed by media-sound/pavucontrol
+dev-libs/libxml2 abi_x86_32
+
+# Needed by app-emulation/wine-staging
+dev-libs/libgcrypt abi_x86_32
+media-sound/pulseaudio abi_x86_32
+
+# Needed by net-wireless/gnuradio
+dev-db/sqlite abi_x86_32
+
+# required by app-text/sigil
+dev-libs/openssl abi_x86_32
+
+# required by sys-apps/systemd
+sys-libs/pam abi_x86_32
+
 # Needed by `app-text/poppler`
 #dev-qt/qtsql qt3support
 dev-qt/qtgui abi_x86_32
@@ -44,9 +61,6 @@ dev-qt/qtgui -qt3support abi_x86_32
 
 # Needed by `dev-db/sqlmap`.
 dev-python/python-ntlm
-
-# Needed by `sci-mathematics/rstudio`
-dev-ruby/rake ruby_targets_ruby24
 
 # Needed by `app-emulation/wine-staging`
 media-libs/lcms abi_x86_32

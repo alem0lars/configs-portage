@@ -51,6 +51,9 @@ define_locals do
 
   variable "portage.l10n", as: :l10n, default: %i(en)
 
+  variable "portage.ruby_targets", as: :ruby_targets
+  variable "portage.python_targets", as: :python_targets
+
   computed(:cflags_banned_keyword) { %w(-fstack-protector-strong) }
 
   computed(:cflags) do
@@ -102,6 +105,14 @@ MAKEOPTS="-j<%= local! :cpu_max_jobs %> -l<%= local! :cpu_max_load %>"
 #       Remove the following line when rust ebuild doesn't need multitarget use
 #       flag anymore.
 LLVM_TARGETS="X86 AArch64 AMDGPU ARM BPF Hexagon MSP430 Mips NVPTX PowerPC Sparc SystemZ XCore"
+
+<% if local? :python_targets %>
+PYTHON_TARGETS="<%= local!(:python_targets).join(" ") %>"
+<% end %>
+
+<% if local? :ruby_targets %>
+RUBY_TARGETS="<%= local!(:ruby_targets).join(" ") %>"
+<% end %>
 # ──────────────────────────────────────────────── Misc directories ← Portage ─┤
 PORTDIR="/usr/portage"
 DISTDIR="${PORTDIR}/distfiles"
