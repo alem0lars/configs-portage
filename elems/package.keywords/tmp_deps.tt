@@ -179,6 +179,8 @@ dev-ruby/rest-client          ~amd64
 dev-ruby/net-ssh              ~amd64
 dev-ruby/listen               ~amd64
 dev-ruby/nokogiri             ~amd64
+dev-ruby/net-scp ~amd64
+dev-ruby/rake ~amd64
 
 # Needed by `dev-python/tmuxp`.
 dev-python/click ~amd64
