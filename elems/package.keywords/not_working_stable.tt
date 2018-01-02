@@ -36,4 +36,12 @@
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 
+# At the moment `app-emulation/docker-runc` fails to build in stable version.
+# TODO: Remove when stable version builds correctly!
+app-emulation/docker ~amd64
+app-emulation/docker-runc ~amd64
+app-emulation/containerd ~amd64
+app-emulation/docker-proxy ~amd64
+
+
 # vim: set filetype=eruby.gentoo-package-keywords :
