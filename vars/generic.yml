@@ -11,6 +11,8 @@ portage:
     - policykit
     - libnotify
     - acpi
+    # Webcam
+    - v4l
     # Protocols
     - usb
     # Network
