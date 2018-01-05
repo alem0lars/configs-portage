@@ -42,6 +42,7 @@ dev-libs/libxml2 abi_x86_32
 # Needed by app-emulation/wine-staging
 dev-libs/libgcrypt abi_x86_32
 media-sound/pulseaudio abi_x86_32
+media-libs/libv4l abi_x86_32
 
 # Needed by net-wireless/gnuradio
 dev-db/sqlite abi_x86_32
