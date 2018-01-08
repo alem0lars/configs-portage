@@ -89,6 +89,7 @@ dev-vcs/gitinspector                ~amd64
 dev-vcs/hub                         ~amd64
 dev-embedded/dfu-programmer         ~amd64
 dev-dotnet/rider                    ~amd64
+dev-db/pgadmin4                     ~amd64
 
 media-gfx/plantuml         ~amd64
 media-gfx/pngquant         ~amd64
