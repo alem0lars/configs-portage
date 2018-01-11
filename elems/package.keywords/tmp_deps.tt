@@ -219,5 +219,8 @@ dev-libs/libgcrypt ~amd64
 # Needed by `media-gfx/pngquant`
 media-gfx/libimagequant ~amd64
 
+# Needed by `app-text/sigil`
+dev-libs/icu ~amd64
+
 
 # vim: set filetype=eruby.gentoo-package-keywords :
