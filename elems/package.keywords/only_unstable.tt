@@ -112,6 +112,7 @@ net-print/epson-inkjet-printer-escpr ~amd64
 net-vpn/logmein-hamachi              ~amd64
 net-wireless/gnuradio                ~amd64
 net-analyzer/metasploit              ~amd64
+net-misc/teamviewer                  ~amd64
 
 sci-electronics/quartus-prime-lite ~amd64
 
